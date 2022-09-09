@@ -39,44 +39,44 @@ const Container = styled.div<ContainerProps>(({ theme: { colors, fonts }, isSele
   position: relative;
   z-index: 4; /* to render over SidebarNav::before */
   width: 100%;
-  height: 40px;
+  height: 50px;
   text-align: center;
   cursor: pointer;
   font-size: ${fonts.size.h3};
-  color: ${colors.variant.darkest.default};
-  background: ${isSelected ? colors.gray[90] : colors.global.contentBackground};
+  color: ${isSelected ? colors.gray[90] : colors.global.contentBackground};
+  // background: ${isSelected ? colors.gray[90] : colors.global.contentBackground};
 
   :hover {
-    color: ${isSelected ? colors.variant.darkest.default : colors.variant.darker.default};
-    background: ${isSelected ? colors.gray[80] : colors.variant.lightest.default};
+    // color: ${isSelected ? colors.variant.darkest.default : colors.variant.darker.default};
+    color: ${isSelected ? colors.gray[80] : colors.variant.lightest.default};
   }
 
   :active {
-    background: ${colors.variant.lighter.default};
+    color: ${colors.variant.lighter.default};
   }
 
   /* stylelint-disable selector-max-empty-lines, indentation */
-  ${(isSelected && !sidebarIsPinned) && css`
-    ::before,
-    ::after {
-      content: '';
-      position: absolute;
-      right: -5px;
-      height: 15px;
-      width: 5px;
-      background-color: ${colors.global.contentBackground};
-    }
-
-    ::before {
-      transform: skewY(-45deg);
-      top: calc(50% - 12px);
-    }
-    
-    ::after {
-      transform: skewY(45deg);
-      bottom: calc(50% - 12px);
-    }
-  `}
+  // ${(isSelected && !sidebarIsPinned) && css`
+  //   ::before,
+  //   ::after {
+  //     content: '';
+  //     position: absolute;
+  //     right: -5px;
+  //     height: 15px;
+  //     width: 5px;
+  //     background-color: ${colors.global.contentBackground};
+  //   }
+  //
+  //   ::before {
+  //     transform: skewY(-45deg);
+  //     top: calc(50% - 12px);
+  //   }
+  //  
+  //   ::after {
+  //     transform: skewY(45deg);
+  //     bottom: calc(50% - 12px);
+  //   }
+  // `}
   /* stylelint-enable selector-max-empty-lines, indentation */
 `);
 
