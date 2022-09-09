@@ -63,7 +63,7 @@
     "webpack": "5.74.0",
     "webpack-cleanup-plugin": "0.5.1",
     "webpack-cli": "4.10.0",
-    "webpack-merge": "4.2.2"
+    "webpack-merge": "5.8.0"
   },
   "devDependencies": {
     "@babel/cli": "7.16.8",
