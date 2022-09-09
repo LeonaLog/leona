@@ -101,4 +101,13 @@ public class MongoConnectionImpl implements MongoConnection {
     public MongoDatabase getMongoDatabase() {
         return mongoDatabase;
     }
+
+    public static void main(String[] args) {
+        MongoClientURI uri = new MongoClientURI("mongodb://192.168.120.18:27017/graylog");
+        MongoClient m = new MongoClient(uri);
+        String dbName = uri.getDatabase();
+        DB db = m.getDB(dbName);
+        db.setWriteConcern(WriteConcern.ACKNOWLEDGED);
+        System.out.println(db.command("{ ping: 1 }"));
+    }
 }

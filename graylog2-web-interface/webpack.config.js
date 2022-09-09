@@ -194,7 +194,7 @@ const webpackConfig = {
     }),
     new webpack.DllReferencePlugin({ manifest: VENDOR_MANIFEST_PATH, context: ROOT_PATH }),
     new HtmlWebpackPlugin({
-      title: 'Graylog',
+      title: 'Leona',
       favicon: path.resolve(ROOT_PATH, 'public/images/favicon.png'),
       filename: 'index.html',
       inject: false,
