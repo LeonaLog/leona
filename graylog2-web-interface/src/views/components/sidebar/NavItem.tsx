@@ -93,29 +93,29 @@ const IconWrap = styled.span<IconWrapProps>(({ showTitleOnHover, isSelected, the
   justify-content: center;
   position: relative;
 
-  :hover {
-    + div {
-      display: ${(showTitleOnHover && !isSelected) ? 'flex' : 'none'};
-    }
+  // :hover {
+  //   + div {
+  //     display: ${(showTitleOnHover && !isSelected) ? 'flex' : 'none'};
+  //   }
+  //
+  //   ::after {
+  //     display: ${(showTitleOnHover) ? 'block' : 'none'};
+  //   }
+  // }
 
-    ::after {
-      display: ${(showTitleOnHover) ? 'block' : 'none'};
-    }
-  }
-
-  ::after {
-    display: ${isSelected ? 'block' : 'none'};
-    box-shadow: ${(isSelected && !sidebarIsPinned) ? `inset 2px -2px 2px 0 ${colors.global.navigationBoxShadow}` : 'none'};
-    background-color: ${isSelected ? colors.global.contentBackground : colors.variant.lightest.info};
-    border: ${isSelected ? 'none' : `1px solid ${colors.variant.light.info}`};
-    content: ' ';
-    position: absolute;
-    left: 82.5%;
-    top: calc(50% - 9px);
-    width: 18px;
-    height: 18px;
-    transform: rotate(45deg);
-  }
+  // ::after {
+  //   display: ${isSelected ? 'block' : 'none'};
+  //   box-shadow: ${(isSelected && !sidebarIsPinned) ? `inset 2px -2px 2px 0 ${colors.global.navigationBoxShadow}` : 'none'};
+  //   background-color: ${isSelected ? colors.global.contentBackground : colors.variant.lightest.info};
+  //   border: ${isSelected ? 'none' : `1px solid ${colors.variant.light.info}`};
+  //   content: ' ';
+  //   position: absolute;
+  //   left: 82.5%;
+  //   top: calc(50% - 9px);
+  //   width: 18px;
+  //   height: 18px;
+  //   transform: rotate(45deg);
+  // }
 `);
 
 const Title = styled.div(({ theme: { colors, fonts } }) => css`

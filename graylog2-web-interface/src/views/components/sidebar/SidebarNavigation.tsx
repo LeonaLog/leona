@@ -38,18 +38,18 @@ const Container = styled.div<{ isOpen: boolean, sidebarIsPinned: boolean }>(({ i
   position: relative;
   z-index: 1031;
 
-  ::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -6px;
-    height: 6px;
-    width: 6px;
-    border-top-left-radius: 50%;
-    background: transparent;
-    box-shadow: -6px -6px 0 3px ${theme.colors.global.navigationBackground};
-    z-index: 4; /* to render over Sidebar ContentColumn */
-  }
+  // ::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   right: -6px;
+  //   height: 6px;
+  //   width: 6px;
+  //   border-top-left-radius: 50%;
+  //   background: transparent;
+  //   box-shadow: -6px -6px 0 3px ${theme.colors.global.navigationBackground};
+  //   z-index: 4; /* to render over Sidebar ContentColumn */
+  // }
 `);
 
 const SectionList = styled.div`

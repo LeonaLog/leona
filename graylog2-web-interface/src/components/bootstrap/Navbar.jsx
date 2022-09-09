@@ -29,7 +29,13 @@ const Navbar = styled(BootstrapNavbar)(({ theme }) => css`
 
   .navbar-brand {
     color: ${theme.colors.variant.default};
-    padding: 12px 15px 0 15px;
+    // padding: 12px 15px 0 15px;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #072C4F;
 
     &:hover,
     &:focus {
