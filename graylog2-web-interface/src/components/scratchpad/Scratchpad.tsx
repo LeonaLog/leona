@@ -217,7 +217,7 @@ const Scratchpad = () => {
                           overlay={(
                             <Tooltip id="scratchpad-help" show>
                               You can use this space to store personal notes and other information while interacting with
-                              Graylog, without leaving your browser window. For example, store timestamps, user IDs, or IP
+                              Leona, without leaving your browser window. For example, store timestamps, user IDs, or IP
                               addresses you need in various investigations.
                             </Tooltip>
                           )}>

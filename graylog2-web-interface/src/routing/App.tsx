@@ -33,6 +33,7 @@ const AppLayout = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding-left: 60px;
 `;
 
 const PageContent = styled.div`

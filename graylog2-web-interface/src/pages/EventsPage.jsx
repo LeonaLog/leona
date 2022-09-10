@@ -19,7 +19,7 @@ import PropTypes from 'prop-types';
 
 import { LinkContainer } from 'components/common/router';
 import { ButtonToolbar, Col, Row, Button } from 'components/bootstrap';
-import { DocumentTitle, IfPermitted, PageHeader } from 'components/common';
+import { DocumentTitle, PageHeader } from 'components/common';
 import DocumentationLink from 'components/support/DocumentationLink';
 import EventsContainer from 'components/events/events/EventsContainer';
 import DocsHelper from 'util/DocsHelper';

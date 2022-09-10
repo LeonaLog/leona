@@ -51,7 +51,7 @@ const ContentOverlay = styled.div(({ theme }) => css`
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 50px;
+  left: 120px;
   right: 0;
   background: ${chroma(theme.colors.brand.tertiary).alpha(0.25).css()};
   z-index: 5;

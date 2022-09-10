@@ -36,7 +36,7 @@ export const Container = styled.div<{ sidebarIsPinned: boolean }>(({ theme, side
   width: 270px;
   height: ${sidebarIsPinned ? '100%' : 'calc(100% - 50px)'}; /* subtract the nav height */
   top: ${sidebarIsPinned ? 0 : '50px'};
-  left: ${sidebarIsPinned ? 0 : '50px'};
+  left: ${sidebarIsPinned ? 0 : '120px'};
 
   background: ${theme.colors.global.contentBackground};
   border-right: ${sidebarIsPinned ? 'none' : `1px solid ${theme.colors.variant.light.default}`};
