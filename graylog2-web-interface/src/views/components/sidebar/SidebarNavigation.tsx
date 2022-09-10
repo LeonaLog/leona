@@ -29,8 +29,7 @@ type Props = {
 };
 
 const Container = styled.div<{ isOpen: boolean, sidebarIsPinned: boolean }>(({ isOpen, sidebarIsPinned, theme }) => css`
-  // background: ${theme.colors.global.navigationBackground};
-  background: #072C4F;
+  background: ${theme.colors.global.navigationBackground};
   color: ${theme.utils.contrastingColor(theme.colors.global.navigationBackground, 'AA')};
   box-shadow: ${(sidebarIsPinned && isOpen) ? 'none' : `3px 3px 3px ${theme.colors.global.navigationBoxShadow}`};
   width: 60px;

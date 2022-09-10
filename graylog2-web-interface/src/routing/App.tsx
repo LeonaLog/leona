@@ -26,6 +26,12 @@ import CurrentUserContext from 'contexts/CurrentUserContext';
 import Navigation from 'components/navigation/Navigation';
 import ReportedErrorBoundary from 'components/errors/ReportedErrorBoundary';
 import RuntimeErrorBoundary from 'components/errors/RuntimeErrorBoundary';
+import LogoIcon from 'assets/leona.svg';
+import SearchIcon from 'assets/search.svg';
+import StreamIcon from 'assets/stream.svg';
+import AlertIcon from 'assets/notification.svg';
+import DashboardIcon from 'assets/dashboard.svg';
+import HelpIcon from 'assets/help.svg';
 
 import 'stylesheets/typeahead.less';
 
@@ -34,6 +40,15 @@ const AppLayout = styled.div`
   flex-direction: column;
   height: 100%;
   padding-left: 60px;
+`;
+
+const NavAppLayout = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 60px;
+  background: #072C4F;
 `;
 
 const PageContent = styled.div`
@@ -68,6 +83,29 @@ const App = ({ children }) => (
 
       return (
         <ScratchpadProvider loginName={currentUser.username}>
+          <NavAppLayout>
+            <img style={{ marginTop: 5, marginBottom: 5 }} src={LogoIcon} width={60} height={40} alt="logo" />
+            <ul className="appNavUl">
+              <li className="appNavLi" onClick={() => window.open('/search', '_self')}>
+                <img className="appNavImg" src={SearchIcon} alt="search" />
+              </li>
+              <li className="appNavLi" onClick={() => window.open('/streams', '_self')}>
+                <img className="appNavImg" src={StreamIcon} alt="streams" />
+              </li>
+              <li className="appNavLi" onClick={() => window.open('/alerts', '_self')}>
+                <img className="appNavImg" src={AlertIcon} alt="alerts" />
+              </li>
+              <li className="appNavLi" onClick={() => window.open('/dashboards', '_self')}>
+                <img className="appNavImg" src={DashboardIcon} alt="dashboards" />
+              </li>
+              <li style={{ position: 'absolute', left: 0, bottom: 0, width: 60, height: 50, padding: '7px 12px' }}>
+                <img src={HelpIcon}
+                     className="appHelpImg"
+                     onClick={() => window.open('https://ciusji.gitbook.io/leona', '_blank')}
+                     alt="data-help" />
+              </li>
+            </ul>
+          </NavAppLayout>
           <AppLayout>
             <Navigation />
             <ScrollToHint id="scroll-to-hint">

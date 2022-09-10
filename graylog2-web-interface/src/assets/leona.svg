@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1500px" height="1500px" viewBox="0 0 1500 1500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>leona</title>
+    <g id="graylog" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#ED1C25" cx="750" cy="750" r="750"></circle>
+        <g id="Group" transform="translate(837.000000, 743.000000) rotate(-45.000000) translate(-837.000000, -743.000000) translate(437.000000, 343.000000)">
+            <circle id="Oval" fill="#FFFFFF" cx="200" cy="200" r="200"></circle>
+            <circle id="Oval" fill="#FFFFFF" cx="200" cy="600" r="200"></circle>
+            <polygon id="Path" fill="#FFFFFF" points="600 0 200 0 0 200 0 800 200 800 400 600 400 200"></polygon>
+            <circle id="Oval" fill="#FFCACA" cx="600" cy="200" r="200"></circle>
+        </g>
+    </g>
+</svg>
