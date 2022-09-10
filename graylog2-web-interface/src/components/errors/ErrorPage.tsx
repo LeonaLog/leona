@@ -25,8 +25,8 @@ import ErrorJumbotron from 'components/errors/ErrorJumbotron';
 
 const generateStyles = () => css`
   body {
-    background: url(${({ backgroundImage }: { backgroundImage: string }) => backgroundImage}) no-repeat center center fixed;
-    background-size: cover;
+    // background: url(${({ backgroundImage }: { backgroundImage: string }) => backgroundImage}) no-repeat center center fixed;
+    // background-size: cover;
   }
 `;
 
