@@ -24,21 +24,21 @@ import { defaultCompare as naturalSort } from 'logic/DefaultCompare';
 import { LinkContainer } from 'components/common/router';
 import { appPrefixed } from 'util/URLUtils';
 import AppConfig from 'util/AppConfig';
-import { Navbar, Nav, NavItem, NavDropdown } from 'components/bootstrap';
+import { Navbar, Nav, NavDropdown } from 'components/bootstrap';
 import { isPermitted } from 'util/PermissionsMixin';
 import useCurrentUser from 'hooks/useCurrentUser';
 import GlobalThroughput from 'components/throughput/GlobalThroughput';
 import Routes, { ENTERPRISE_ROUTE_DESCRIPTION, SECURITY_ROUTE_DESCRIPTION } from 'routing/Routes';
 
 import UserMenu from './UserMenu';
-import HelpMenu from './HelpMenu';
+// import HelpMenu from './HelpMenu';
 // import NavigationBrand from './NavigationBrand';
 import NotificationBadge from './NotificationBadge';
 import NavigationLink from './NavigationLink';
 import DevelopmentHeaderBadge from './DevelopmentHeaderBadge';
 import SystemMenu from './SystemMenu';
 import InactiveNavItem from './InactiveNavItem';
-import ScratchpadToggle from './ScratchpadToggle';
+// import ScratchpadToggle from './ScratchpadToggle';
 import StyledNavbar from './Navigation.styles';
 
 const _isActive = (requestPath, prefix) => {
@@ -145,21 +145,21 @@ const Navigation = React.memo(({ pathname }: Props) => {
 
       <Navbar.Collapse>
         <Nav navbar>
-          <LinkContainer to={Routes.SEARCH}>
-            <NavItem to="search">Search</NavItem>
-          </LinkContainer>
+          {/* <LinkContainer to={Routes.SEARCH}> */}
+          {/*  <NavItem to="search">Search</NavItem> */}
+          {/* </LinkContainer> */}
 
-          <LinkContainer to={Routes.STREAMS}>
-            <NavItem>Streams</NavItem>
-          </LinkContainer>
+          {/* <LinkContainer to={Routes.STREAMS}> */}
+          {/*  <NavItem>Streams</NavItem> */}
+          {/* </LinkContainer> */}
 
-          <LinkContainer to={Routes.ALERTS.LIST}>
-            <NavItem>Alerts</NavItem>
-          </LinkContainer>
+          {/* <LinkContainer to={Routes.ALERTS.LIST}> */}
+          {/*  <NavItem>Alerts</NavItem> */}
+          {/* </LinkContainer> */}
 
-          <LinkContainer to={Routes.DASHBOARDS}>
-            <NavItem>Dashboards</NavItem>
-          </LinkContainer>
+          {/* <LinkContainer to={Routes.DASHBOARDS}> */}
+          {/*  <NavItem>Dashboards</NavItem> */}
+          {/* </LinkContainer> */}
 
           {pluginNavigations}
 
@@ -182,9 +182,9 @@ const Navigation = React.memo(({ pathname }: Props) => {
             {pluginItems.map(({ key, component: Item }) => <Item key={key} />)}
           </InactiveNavItem>
 
-          <ScratchpadToggle />
+          {/* <ScratchpadToggle /> */}
 
-          <HelpMenu active={_isActive(pathname, Routes.GETTING_STARTED)} />
+          {/* <HelpMenu active={_isActive(pathname, Routes.GETTING_STARTED)} /> */}
 
           <UserMenu fullName={fullName} readOnly={readOnly} userId={userId} />
         </Nav>
