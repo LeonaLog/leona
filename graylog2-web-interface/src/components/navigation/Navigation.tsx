@@ -32,7 +32,7 @@ import Routes, { ENTERPRISE_ROUTE_DESCRIPTION, SECURITY_ROUTE_DESCRIPTION } from
 
 import UserMenu from './UserMenu';
 import HelpMenu from './HelpMenu';
-import NavigationBrand from './NavigationBrand';
+// import NavigationBrand from './NavigationBrand';
 import NotificationBadge from './NotificationBadge';
 import NavigationLink from './NavigationLink';
 import DevelopmentHeaderBadge from './DevelopmentHeaderBadge';
@@ -133,11 +133,11 @@ const Navigation = React.memo(({ pathname }: Props) => {
   return (
     <StyledNavbar fluid fixedTop>
       <Navbar.Header>
-        <Navbar.Brand>
-          <LinkContainer to={Routes.STARTPAGE}>
-            <NavigationBrand />
-          </LinkContainer>
-        </Navbar.Brand>
+        {/* <Navbar.Brand> */}
+        {/*  <LinkContainer to={Routes.STARTPAGE}> */}
+        {/*    <NavigationBrand /> */}
+        {/*  </LinkContainer> */}
+        {/* </Navbar.Brand> */}
         <Navbar.Toggle />
         <DevelopmentHeaderBadge smallScreen />
         {pluginItems.map(({ key, component: Item }) => <Item key={key} smallScreen />)}
