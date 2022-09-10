@@ -43,12 +43,12 @@ const Container = styled.div<ContainerProps>(({ theme: { colors, fonts }, isSele
   text-align: center;
   cursor: pointer;
   font-size: ${fonts.size.h3};
-  color: ${isSelected ? colors.gray[90] : colors.global.contentBackground};
+  color: ${isSelected ? '#1f1f1f' : '#929292'};
   // background: ${isSelected ? colors.gray[90] : colors.global.contentBackground};
 
   :hover {
     // color: ${isSelected ? colors.variant.darkest.default : colors.variant.darker.default};
-    color: ${isSelected ? colors.gray[80] : colors.variant.lightest.default};
+    color: ${isSelected ? '#1f1f1f' : '#929292'};
   }
 
   :active {
@@ -150,7 +150,7 @@ const NavItem = ({ isSelected, title, icon, onClick, showTitleOnHover, sidebarIs
     <IconWrap showTitleOnHover={showTitleOnHover}
               isSelected={isSelected}
               sidebarIsPinned={sidebarIsPinned}>
-      <Icon name={icon} />
+      <Icon size="sm" name={icon} />
     </IconWrap>
     {(showTitleOnHover && !isSelected) && <Title><span>{title}</span></Title>}
   </Container>

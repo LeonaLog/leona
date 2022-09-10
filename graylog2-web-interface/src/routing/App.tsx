@@ -98,7 +98,7 @@ const App = ({ children }) => (
               <li className="appNavLi" onClick={() => window.open('/dashboards', '_self')}>
                 <img className="appNavImg" src={DashboardIcon} alt="dashboards" />
               </li>
-              <li style={{ position: 'absolute', left: 0, bottom: 0, width: 60, height: 50, padding: '7px 12px' }}>
+              <li style={{ position: 'absolute', left: 0, bottom: 0, width: 60, height: 60, padding: '12px' }}>
                 <img src={HelpIcon}
                      className="appHelpImg"
                      onClick={() => window.open('https://ciusji.gitbook.io/leona', '_blank')}
