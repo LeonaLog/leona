@@ -36,7 +36,7 @@ type Props = {
  * ```
  */
 const DocumentTitle = ({ children, title }: Props) => {
-  const DEFAULT_TITLE = 'Graylog';
+  const DEFAULT_TITLE = 'Leona';
 
   useEffect(() => {
     document.title = `${document.title} - ${title}`;
