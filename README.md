@@ -18,6 +18,21 @@ Welcome! _Leona_ is an open source log management platform.
 You can read more about the project on our [website](https://ciusji.gitbook.io/leona).
 
 
+## Snapshots
+
+### Log Search Overview
+
+![log-overview](./graylog2-web-interface/public/images/snapshots/leona-search-overview.png)
+
+### Log Search Detail
+
+![log-detail](./graylog2-web-interface/public/images/snapshots/leona-search-detail.png)
+
+### Log Node Detail
+
+![node-detail](./graylog2-web-interface/public/images/snapshots/leona-search-node.png)
+
+
 ## Quickstart
 
 ```shell
