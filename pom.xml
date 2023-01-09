@@ -94,7 +94,7 @@
         <apache-httpasyncclient.version>4.1.4</apache-httpasyncclient.version>
         <apache-httpclient.version>4.5.13</apache-httpclient.version>
         <apache-httpcore.version>4.4.14</apache-httpcore.version>
-        <auto-value.version>1.7.4</auto-value.version>
+        <auto-value.version>1.9</auto-value.version>
         <auto-value-javabean.version>2.5.2</auto-value-javabean.version>
         <aws-java-sdk-2.version>2.17.77</aws-java-sdk-2.version>
         <bouncycastle.version>1.69</bouncycastle.version>
