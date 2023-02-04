@@ -141,7 +141,7 @@ const Title = styled.div(({ theme: { colors, fonts } }) => css`
   }
 `);
 
-const NavItem = ({ isSelected, title, icon, onClick, showTitleOnHover, sidebarIsPinned }: Props) => (
+export const NavItem = ({ isSelected, title, icon, onClick, showTitleOnHover, sidebarIsPinned }: Props) => (
   <Container aria-label={title}
              isSelected={isSelected}
              onClick={onClick}
@@ -156,7 +156,30 @@ const NavItem = ({ isSelected, title, icon, onClick, showTitleOnHover, sidebarIs
   </Container>
 );
 
+export const MiniNavItem = ({ isSelected, title, icon, onClick, showTitleOnHover, sidebarIsPinned }: Props) => (
+  <Container aria-label={title}
+             isSelected={isSelected}
+             onClick={onClick}
+             title={showTitleOnHover ? '' : title}
+             sidebarIsPinned={sidebarIsPinned}>
+    <IconWrap showTitleOnHover={showTitleOnHover}
+              isSelected={isSelected}
+              sidebarIsPinned={sidebarIsPinned}>
+      <Icon size="sm" className="logo-sidebar" name={icon} />
+    </IconWrap>
+    {(showTitleOnHover && !isSelected) && <Title><span>{title}</span></Title>}
+  </Container>
+);
+
 NavItem.propTypes = {
+  icon: PropTypes.node.isRequired,
+  isSelected: PropTypes.bool,
+  showTitleOnHover: PropTypes.bool,
+  sidebarIsPinned: PropTypes.bool.isRequired,
+  title: PropTypes.string.isRequired,
+};
+
+MiniNavItem.prototype = {
   icon: PropTypes.node.isRequired,
   isSelected: PropTypes.bool,
   showTitleOnHover: PropTypes.bool,
@@ -169,4 +192,4 @@ NavItem.defaultProps = {
   showTitleOnHover: true,
 };
 
-export default NavItem;
+export default { NavItem, MiniNavItem };

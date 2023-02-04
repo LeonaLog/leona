@@ -62,15 +62,15 @@ const GlobalThemeStyles = createGlobalStyle(({ theme }) => css`
   }
 
   h1 {
-    font-size: ${theme.fonts.size.h1};
-  }
-
-  h2 {
     font-size: ${theme.fonts.size.h2};
   }
 
-  h3 {
+  h2 {
     font-size: ${theme.fonts.size.h3};
+  }
+
+  h3 {
+    font-size: ${theme.fonts.size.h4};
   }
 
   h4 {
@@ -154,8 +154,8 @@ const GlobalThemeStyles = createGlobalStyle(({ theme }) => css`
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: ${theme.colors.global.contentBackground};
-    border: 1px solid ${theme.colors.gray[80]};
-    margin-bottom: 10px;
+    // border-bottom: 1px solid ${theme.colors.gray[80]};
+    margin-bottom: 40px;
 
     p.description {
       margin-top: 3px;

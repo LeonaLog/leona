@@ -39,8 +39,7 @@ export const Container = styled.div<{ sidebarIsPinned: boolean }>(({ theme, side
   left: ${sidebarIsPinned ? 0 : '120px'};
 
   background: ${theme.colors.global.contentBackground};
-  border-right: ${sidebarIsPinned ? 'none' : `1px solid ${theme.colors.variant.light.default}`};
-  box-shadow: ${sidebarIsPinned ? `3px 3px 3px ${theme.colors.global.navigationBoxShadow}` : 'none'};
+  // box-shadow: ${sidebarIsPinned ? `3px 3px 3px ${theme.colors.global.navigationBoxShadow}` : 'none'};
 
   z-index: ${sidebarIsPinned ? 1030 : 6};
 
@@ -54,7 +53,7 @@ export const Container = styled.div<{ sidebarIsPinned: boolean }>(({ theme, side
       width: 6px;
       border-top-left-radius: 50%;
       background: transparent;
-      box-shadow: -6px -6px 0 3px ${theme.colors.global.contentBackground};
+      // box-shadow: -6px -6px 0 3px ${theme.colors.global.contentBackground};
       z-index: 5; /* to render over Sidebar ContentColumn */
     }
   `}
@@ -69,8 +68,10 @@ const ContentGrid = styled.div(({ theme }) => css`
   -ms-grid-rows: auto 1fr;
   height: 100%;
   overflow-y: auto;
-
-  padding: 5px 15px 0 15px;
+  
+  border-right: 1px solid #d0d0d0;
+  
+  padding: 5px 15px 0 4px;
 
   color: ${theme.colors.global.textDefault};
 `);
@@ -100,7 +101,7 @@ const SearchTitle = styled.div`
   }
 `;
 
-const Title = styled.h1`
+const Title = styled.h2`
   color: inherit;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -120,7 +121,7 @@ const HorizontalRule = styled.hr`
   margin: 5px 0 10px 0;
 `;
 
-const SectionTitle = styled.h2`
+const SectionTitle = styled.h3`
   margin-bottom: 10px;
 `;
 

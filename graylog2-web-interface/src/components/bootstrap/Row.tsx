@@ -20,7 +20,7 @@ import styled, { css } from 'styled-components';
 
 export const RowContentStyles = css(({ theme }) => css`
   background-color: ${theme.colors.global.contentBackground};
-  border: 1px solid ${theme.colors.variant.lighter.default};
+  // border: 1px solid ${theme.colors.variant.lighter.default};
   margin-bottom: ${theme.spacings.xs};
   border-radius: 4px;
 `);

@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1500px" height="1500px" viewBox="0 0 1500 1500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>leona</title>
+<svg width="350px" height="350px" viewBox="0 0 350 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>graylog</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
     <g id="graylog" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <circle id="Oval" fill="#ED1C25" cx="750" cy="750" r="750"></circle>
-        <g id="Group" transform="translate(837.000000, 743.000000) rotate(-45.000000) translate(-837.000000, -743.000000) translate(437.000000, 343.000000)">
-            <circle id="Oval" fill="#FFFFFF" cx="200" cy="200" r="200"></circle>
-            <circle id="Oval" fill="#FFFFFF" cx="200" cy="600" r="200"></circle>
-            <polygon id="Path" fill="#FFFFFF" points="600 0 200 0 0 200 0 800 200 800 400 600 400 200"></polygon>
-            <circle id="Oval" fill="#FFCACA" cx="600" cy="200" r="200"></circle>
+        <g id="Group-2">
+            <circle id="Oval" fill="#229DAD" cx="175" cy="175" r="175"></circle>
+            <g id="Group" transform="translate(195.300000, 173.366667) rotate(-45.000000) translate(-195.300000, -173.366667) translate(101.966667, 80.033333)">
+                <circle id="Oval" fill="#FFFFFF" cx="46.6666667" cy="46.6666667" r="46.6666667"></circle>
+                <circle id="Oval" fill="#FFFFFF" cx="46.6666667" cy="140" r="46.6666667"></circle>
+                <polygon id="Path" fill="url(#linearGradient-1)" points="140 1.6953678e-14 46.6666667 1.6953678e-14 -5.27731736e-14 46.6666667 -5.27731736e-14 186.666667 46.6666667 186.666667 93.3333333 140 93.3333333 46.6666667"></polygon>
+                <circle id="Oval" fill="#85D2D9" cx="140" cy="46.6666667" r="46.6666667"></circle>
+            </g>
         </g>
     </g>
 </svg>

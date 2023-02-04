@@ -28,11 +28,9 @@ import { Navbar, Nav, NavDropdown } from 'components/bootstrap';
 import { isPermitted } from 'util/PermissionsMixin';
 import useCurrentUser from 'hooks/useCurrentUser';
 import GlobalThroughput from 'components/throughput/GlobalThroughput';
-import Routes, { ENTERPRISE_ROUTE_DESCRIPTION, SECURITY_ROUTE_DESCRIPTION } from 'routing/Routes';
+import Routes from 'routing/Routes';
 
 import UserMenu from './UserMenu';
-// import HelpMenu from './HelpMenu';
-// import NavigationBrand from './NavigationBrand';
 import NotificationBadge from './NotificationBadge';
 import NavigationLink from './NavigationLink';
 import DevelopmentHeaderBadge from './DevelopmentHeaderBadge';
@@ -50,13 +48,13 @@ const _isActive = (requestPath, prefix) => {
  *
  * @param {string} description
  */
-function pluginMenuItemExists(description: string): boolean {
-  const pluginExports = PluginStore.exports('navigation');
-
-  if (!pluginExports) return false;
-
-  return !!pluginExports.find((value) => value.description?.toLowerCase() === description.toLowerCase());
-}
+// function pluginMenuItemExists(description: string): boolean {
+//   const pluginExports = PluginStore.exports('navigation');
+//
+//   if (!pluginExports) return false;
+//
+//   return !!pluginExports.find((value) => value.description?.toLowerCase() === description.toLowerCase());
+// }
 
 const formatSinglePluginRoute = ({ description, path, permissions, requiredFeatureFlag }: PluginNavigationDropdownItem, currentUserPermissions: Immutable.List<string>, topLevel = false) => {
   if (permissions && !isPermitted(currentUserPermissions, permissions)) {
@@ -100,30 +98,30 @@ type Props = {
 
 const Navigation = React.memo(({ pathname }: Props) => {
   const currentUser = useCurrentUser();
-  const { permissions, fullName, readOnly, id: userId } = currentUser || {};
+  const { fullName, readOnly, id: userId } = currentUser || {};
 
   const pluginExports = PluginStore.exports('navigation');
 
-  const enterpriseMenuIsMissing = !pluginMenuItemExists(ENTERPRISE_ROUTE_DESCRIPTION);
-  const securityMenuIsMissing = !pluginMenuItemExists(SECURITY_ROUTE_DESCRIPTION);
+  // const enterpriseMenuIsMissing = !pluginMenuItemExists(ENTERPRISE_ROUTE_DESCRIPTION);
+  // const securityMenuIsMissing = !pluginMenuItemExists(SECURITY_ROUTE_DESCRIPTION);
 
-  const isPermittedToEnterpriseOrSecurity = isPermitted(permissions, ['licenseinfos:read']);
+  // const isPermittedToEnterpriseOrSecurity = isPermitted(permissions, ['licenseinfos:read']);
 
-  if (enterpriseMenuIsMissing && isPermittedToEnterpriseOrSecurity) {
-    // no enterprise plugin menu, so we will add one
-    pluginExports.push({
-      path: Routes.SYSTEM.ENTERPRISE,
-      description: ENTERPRISE_ROUTE_DESCRIPTION,
-    });
-  }
+  // if (enterpriseMenuIsMissing && isPermittedToEnterpriseOrSecurity) {
+  //   // no enterprise plugin menu, so we will add one
+  //   pluginExports.push({
+  //     path: Routes.SYSTEM.ENTERPRISE,
+  //     description: ENTERPRISE_ROUTE_DESCRIPTION,
+  //   });
+  // }
 
-  if (securityMenuIsMissing && isPermittedToEnterpriseOrSecurity) {
-    // no security plugin menu, so we will add one
-    pluginExports.push({
-      path: Routes.SECURITY,
-      description: SECURITY_ROUTE_DESCRIPTION,
-    });
-  }
+  // if (securityMenuIsMissing && isPermittedToEnterpriseOrSecurity) {
+  //   // no security plugin menu, so we will add one
+  //   pluginExports.push({
+  //     path: Routes.SECURITY,
+  //     description: SECURITY_ROUTE_DESCRIPTION,
+  //   });
+  // }
 
   const pluginNavigations = pluginExports
     .sort((route1, route2) => naturalSort(route1.description.toLowerCase(), route2.description.toLowerCase()))
@@ -145,30 +143,14 @@ const Navigation = React.memo(({ pathname }: Props) => {
 
       <Navbar.Collapse>
         <Nav navbar>
-          {/* <LinkContainer to={Routes.SEARCH}> */}
-          {/*  <NavItem to="search">Search</NavItem> */}
-          {/* </LinkContainer> */}
-
-          {/* <LinkContainer to={Routes.STREAMS}> */}
-          {/*  <NavItem>Streams</NavItem> */}
-          {/* </LinkContainer> */}
-
-          {/* <LinkContainer to={Routes.ALERTS.LIST}> */}
-          {/*  <NavItem>Alerts</NavItem> */}
-          {/* </LinkContainer> */}
-
-          {/* <LinkContainer to={Routes.DASHBOARDS}> */}
-          {/*  <NavItem>Dashboards</NavItem> */}
-          {/* </LinkContainer> */}
-
-          {pluginNavigations}
-
-          <SystemMenu />
+          {/* {pluginNavigations} */}
+          {/* <SystemMenu /> */}
         </Nav>
 
-        <NotificationBadge />
-
         <Nav navbar pullRight className="header-meta-nav">
+          <NotificationBadge />
+          {pluginNavigations}
+          <SystemMenu />
           {AppConfig.isCloud() ? (
             <GlobalThroughput disabled />
           ) : (
@@ -185,7 +167,6 @@ const Navigation = React.memo(({ pathname }: Props) => {
           {/* <ScratchpadToggle /> */}
 
           {/* <HelpMenu active={_isActive(pathname, Routes.GETTING_STARTED)} /> */}
-
           <UserMenu fullName={fullName} readOnly={readOnly} userId={userId} />
         </Nav>
       </Navbar.Collapse>

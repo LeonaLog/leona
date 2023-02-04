@@ -24,7 +24,7 @@ import Routes from 'routing/Routes';
 import history from 'util/History';
 import { SessionActions } from 'stores/sessions/SessionStore';
 
-import ThemeModeToggle from './ThemeModeToggle';
+// import ThemeModeToggle from './ThemeModeToggle';
 
 type Props = {
   fullName: string,
@@ -56,10 +56,10 @@ const UserMenu = ({ fullName, readOnly = true, userId }: Props) => {
                  noCaret>
       <MenuItem header>{fullName}</MenuItem>
       <MenuItem divider />
-      <MenuItem header>
-        <ThemeModeToggle />
-      </MenuItem>
-      <MenuItem divider />
+      {/* <MenuItem header> */}
+      {/*  <ThemeModeToggle /> */}
+      {/* </MenuItem> */}
+      {/* <MenuItem divider /> */}
       <LinkContainer to={route}>
         <MenuItem>{label}</MenuItem>
       </LinkContainer>

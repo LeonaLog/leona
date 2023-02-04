@@ -20,7 +20,7 @@ import './UserNotification.css';
 
 const defaultSettings = {
   debug: false,
-  positionClass: 'toast-bottom-full-width',
+  positionClass: 'toast-bottom-right',
   onclick: null,
   showDuration: 300,
   hideDuration: 1000,

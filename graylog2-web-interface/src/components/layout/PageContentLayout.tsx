@@ -35,7 +35,7 @@ const Container = styled.div(({ theme }) => `
   width: 100%;
 
   /* Bottom gap is defined by the footer */
-  padding: ${theme.spacings.sm} ${theme.spacings.sm} 0 ${theme.spacings.sm};
+  padding: ${theme.spacings.md} ${theme.spacings.xxl} 0 ${theme.spacings.xxl};
 `);
 
 const StyledGrid = styled(Grid)`

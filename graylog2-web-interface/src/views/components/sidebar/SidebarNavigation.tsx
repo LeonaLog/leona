@@ -17,7 +17,7 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 
-import NavItem from './NavItem';
+import { NavItem, MiniNavItem } from './NavItem';
 import type { SidebarSection } from './sidebarSections';
 
 type Props = {
@@ -29,13 +29,14 @@ type Props = {
 };
 
 const Container = styled.div<{ isOpen: boolean, sidebarIsPinned: boolean }>(({ isOpen, sidebarIsPinned, theme }) => css`
-  background: ${theme.colors.global.navigationBackground};
+  // background: ${theme.colors.global.navigationBackground};
   color: ${theme.utils.contrastingColor(theme.colors.global.navigationBackground, 'AA')};
-  box-shadow: ${(sidebarIsPinned && isOpen) ? 'none' : `3px 3px 3px ${theme.colors.global.navigationBoxShadow}`};
-  width: 60px;
+  // box-shadow: ${(sidebarIsPinned && isOpen) ? 'none' : `3px 3px 3px ${theme.colors.global.navigationBoxShadow}`};
+  width: 50px;
+  margin-top: 50px;
   height: 100%;
-  position: relative;
-  z-index: 1031;
+  position: fixed;
+  z-index: 200;
 
   // ::before {
   //   content: '';
@@ -75,24 +76,27 @@ const SidebarNavigation = ({ sections, activeSection, selectSidebarSection, side
   const activeSectionKey = activeSection?.key;
 
   return (
-    <Container sidebarIsPinned={sidebarIsPinned} isOpen={!!activeSection}>
-      <NavItem icon={toggleIcon}
-               onClick={toggleSidebar}
-               showTitleOnHover={false}
-               title={`${activeSection ? 'Close' : 'Open'} sidebar`}
-               sidebarIsPinned={sidebarIsPinned} />
-      <HorizontalRuleWrapper><hr /></HorizontalRuleWrapper>
-      <SectionList>
-        {sections.map(({ key, icon, title }) => (
-          <NavItem isSelected={activeSectionKey === key}
-                   icon={icon}
-                   onClick={() => selectSidebarSection(key)}
-                   key={key}
-                   title={title}
-                   sidebarIsPinned={sidebarIsPinned} />
-        ))}
-      </SectionList>
-    </Container>
+    <>
+      <MiniNavItem icon={toggleIcon}
+                   onClick={toggleSidebar}
+                   showTitleOnHover={false}
+                   title={`${activeSection ? 'Close' : 'Open'} sidebar`}
+                   sidebarIsPinned={sidebarIsPinned}
+                   isSelected />
+      <Container sidebarIsPinned={sidebarIsPinned} isOpen={!!activeSection} hidden={!activeSection}>
+        <HorizontalRuleWrapper />
+        <SectionList>
+          {sections.map(({ key, icon, title }) => (
+            <NavItem isSelected={activeSectionKey === key}
+                     icon={icon}
+                     onClick={() => selectSidebarSection(key)}
+                     key={key}
+                     title={title}
+                     sidebarIsPinned={sidebarIsPinned} />
+          ))}
+        </SectionList>
+      </Container>
+    </>
   );
 };
 

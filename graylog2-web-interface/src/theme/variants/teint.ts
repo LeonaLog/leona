@@ -29,15 +29,15 @@ import type { Colors } from '../colors';
 import { THEME_MODE_LIGHT } from '../constants';
 
 const brand: $PropertyType<Colors, 'brand'> = {
-  primary: '#ff3633',
+  primary: '#2261f0',
   secondary: '#fff',
   tertiary: '#1f1f1f',
 };
 
 const globalDefault: $PropertyType<Colors, 'global'> = {
-  background: '#e8e8e8',
+  background: '#fff',
   contentBackground: '#fff',
-  link: '#702785',
+  link: '#2261f0',
   textAlt: '',
   textDefault: '',
   linkHover: '',
@@ -48,8 +48,8 @@ const globalDefault: $PropertyType<Colors, 'global'> = {
 const variantDefault = {
   danger: '#ad0707',
   default: lighten(brand.tertiary, 0.25),
-  info: '#0063be',
-  primary: '#702785',
+  info: '#2261f0',
+  primary: '#2261f0',
   success: '#00ae42',
   warning: '#ffd200',
 };

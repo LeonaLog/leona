@@ -48,7 +48,7 @@ const NavAppLayout = styled.div`
   left: 0;
   height: 100vh;
   width: 60px;
-  background: #072C4F;
+  background: #24292f;
 `;
 
 const PageContent = styled.div`
@@ -84,7 +84,7 @@ const App = ({ children }) => (
       return (
         <ScratchpadProvider loginName={currentUser.username}>
           <NavAppLayout>
-            <img style={{ marginTop: 5, marginBottom: 5 }} src={LogoIcon} width={60} height={40} alt="logo" />
+            <img style={{ padding: 10 }} src={LogoIcon} width={60} height={60} alt="logo" />
             <ul className="appNavUl">
               <li className="appNavLi" onClick={() => window.open('/search', '_self')}>
                 <img className="appNavImg" src={SearchIcon} alt="search" />

@@ -44,7 +44,6 @@ const ViewDescription = ({ results, viewMetadata }: Props) => {
         Execution
       </SectionSubheadline>
       <p>
-
         <SearchResultOverview results={results} />
       </p>
     </>
