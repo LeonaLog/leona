@@ -4,7 +4,7 @@
 <div align="center">
     <img src="/misc/assets/graylog.svg" width=120 alt="logo" />
     <br />
-    <small>Security and log data done right | Powered by <a href="https://www.graylog.org">graylog</a></small>
+    <small>Security and log data done right</small>
 </div>
 
 # Leona
@@ -15,23 +15,7 @@
 
 Welcome! _Leona_ is an open source log management platform.
 
-You can read more about the project on our [website](https://ciusji.gitbook.io/leona).
-
-
-## Snapshots
-
-### Log Search Overview
-
-![log-overview](./graylog2-web-interface/public/images/snapshots/leona-search-overview.png)
-
-### Log Search Detail
-
-![log-detail](./graylog2-web-interface/public/images/snapshots/leona-search-detail.png)
-
-### Log Node Detail
-
-![node-detail](./graylog2-web-interface/public/images/snapshots/leona-search-node.png)
-
+You can read more about the project on our [LeonaLog Tutorial](https://ciusji.gitbook.io/leona).
 
 ## Quickstart
 
@@ -42,7 +26,7 @@ cd leona
 mvn clean package -DskipTests
 
 # Start server in dev model
-? org.graylog2.bootstrap.Main server --configfile=/Users/admin/.graylog/server/server.conf
+java -cp org.graylog2.bootstrap.Main server --configfile=/Users/admin/.graylog/server/server.conf
 
 # Start web in dev model
 cd graylog2-web-interface
@@ -89,6 +73,7 @@ mongodb_threads_allowed_to_block_multiplier = 5
 
 ## Documentation
 
+- [Overview](https://ciusji.gitbook.io/leona)
 - Installation
   - [Docker](https://ciusji.gitbook.io/leona/installation/docker)
   - [Manual Setup](https://ciusji.gitbook.io/leona/installation/manual-setup)
@@ -127,4 +112,6 @@ Read [the contributing instructions](CONTRIBUTING.md) to get started.
 
 ## License
 
-_Leona_ is released under version 1 of the [Server Side Public License (SSPL)](LICENSE).
+Leona is released under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+<img src="https://raw.githubusercontent.com/GuinsooLab/glab/main/src/images/guinsoolab-group.svg" width="120" alt="license" />

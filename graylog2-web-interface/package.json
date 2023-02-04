@@ -1,7 +1,7 @@
 {
-  "name": "graylog-web-interface",
+  "name": "leogna-ui",
   "version": "4.4.0-SNAPSHOT",
-  "description": "Graylog Web Interface | Leona",
+  "description": "LeonaLog Web Interface | Leona",
   "author": "torch",
   "license": "SSPL-1.0",
   "repository": {
