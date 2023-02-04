@@ -1,8 +1,8 @@
 <div align="right">
-    <img src="/misc/assets/guinsoolab-badge.png" width=60 alt="badge">
+    <img src="https://raw.githubusercontent.com/LeonaLog/leona/main/misc/assets/guinsoolab-badge.png" width=60 alt="badge">
 </div>
 <div align="center">
-    <img src="/misc/assets/graylog.svg" width=120 alt="logo" />
+    <img src="https://raw.githubusercontent.com/LeonaLog/leona/main/misc/assets/graylog.svg" width=120 alt="logo" />
     <br />
     <small>Security and log data done right</small>
 </div>
@@ -13,6 +13,8 @@
 [![Maven Central](https://img.shields.io/maven-central/v/org.graylog2/graylog2-server.svg)](http://mvnrepository.com/artifact/org.graylog2/graylog2-server)
 [![Build](https://github.com/Graylog2/graylog2-server/actions/workflows/build.yml/badge.svg)](https://github.com/Graylog2/graylog2-server/actions/workflows/build.yml)
 
+![leona-hero](./misc/assets/leona-hero.png)
+
 Welcome! _Leona_ is an open source log management platform.
 
 You can read more about the project on our [LeonaLog Tutorial](https://ciusji.gitbook.io/leona).
@@ -22,7 +24,7 @@ You can read more about the project on our [LeonaLog Tutorial](https://ciusji.gi
 ```shell
 git clone git@github.com:LeonaLog/leona.git
 cd leona
-# JAVA_HOME=?17.jdk/Contents/Home
+# JAVA_HOME=?17.jdk/Contents/Home !!!
 mvn clean package -DskipTests
 
 # Start server in dev model
