@@ -1,6 +1,4 @@
-Please follow [the instructions on graylog.org](https://www.graylog.org/get-involved/).
-
-#### Code of Conduct
+# Contributing
 
 In the interest of fostering an open and welcoming environment, we as
 contributors and maintainers pledge to making participation in our project and
@@ -9,4 +7,4 @@ size, disability, ethnicity, gender identity and expression, level of experience
 nationality, personal appearance, race, religion, or sexual identity and
 orientation.
 
-Please read and understand the [Code of Conduct](https://github.com/Graylog2/graylog2-server/blob/master/CODE_OF_CONDUCT.md).
+Please read and understand the [Code of Conduct](./CODE_OF_CONDUCT.md).
