@@ -27,11 +27,6 @@ import Navigation from 'components/navigation/Navigation';
 import ReportedErrorBoundary from 'components/errors/ReportedErrorBoundary';
 import RuntimeErrorBoundary from 'components/errors/RuntimeErrorBoundary';
 import LogoIcon from 'assets/leona.svg';
-import SearchIcon from 'assets/search.svg';
-import StreamIcon from 'assets/stream.svg';
-import AlertIcon from 'assets/notification.svg';
-import DashboardIcon from 'assets/dashboard.svg';
-import HelpIcon from 'assets/help.svg';
 
 import 'stylesheets/typeahead.less';
 
@@ -86,23 +81,29 @@ const App = ({ children }) => (
           <NavAppLayout>
             <img style={{ padding: 10 }} src={LogoIcon} width={60} height={60} alt="logo" />
             <ul className="appNavUl">
-              <li className="appNavLi" onClick={() => window.open('/search', '_self')}>
-                <img className="appNavImg" src={SearchIcon} alt="search" />
+              <li className="appNavLi">
+                <Icon name="magnifying-glass" className="appNavImg" title="Search" onClick={() => window.open('/search', '_self')} />
               </li>
-              <li className="appNavLi" onClick={() => window.open('/streams', '_self')}>
-                <img className="appNavImg" src={StreamIcon} alt="streams" />
+              <li className="appNavLi">
+                <Icon name="plus-square" className="appNavImg" title="Input" onClick={() => window.open('/system/inputs', '_self')} />
               </li>
-              <li className="appNavLi" onClick={() => window.open('/alerts', '_self')}>
-                <img className="appNavImg" src={AlertIcon} alt="alerts" />
+              <li className="appNavLi">
+                <Icon name="wind" className="appNavImg" title="Stream" onClick={() => window.open('/streams', '_self')} />
               </li>
-              <li className="appNavLi" onClick={() => window.open('/dashboards', '_self')}>
-                <img className="appNavImg" src={DashboardIcon} alt="dashboards" />
+              <li className="appNavLi">
+                <Icon name="bell" className="appNavImg" title="Alert" onClick={() => window.open('/alerts', '_self')} />
               </li>
-              <li style={{ position: 'absolute', left: 0, bottom: 0, width: 60, height: 60, padding: '12px' }}>
-                <img src={HelpIcon}
-                     className="appHelpImg"
-                     onClick={() => window.open('https://ciusji.gitbook.io/leona', '_blank')}
-                     alt="data-help" />
+              <li className="appNavLi">
+                <Icon name="gauge-simple-high" className="appNavImg" title="Dashboard" onClick={() => window.open('/dashboards', '_self')} />
+              </li>
+              <li className="appNavLi">
+                <Icon name="user-edit" className="appNavImg" title="User" onClick={() => window.open('/system/users', '_self')} />
+              </li>
+              <li className="appNavLi">
+                <Icon name="cog" className="appNavImg" title="Configuration" onClick={() => window.open('/system/configurations', '_self')} />
+              </li>
+              <li style={{ position: 'absolute', left: 0, bottom: 0, width: 60, height: 60, padding: '12px', color: '#fff' }}>
+                <Icon name="question-circle" className="appHelpImg" onClick={() => window.open('https://ciusji.gitbook.io/leona', '_blank')} />
               </li>
             </ul>
           </NavAppLayout>

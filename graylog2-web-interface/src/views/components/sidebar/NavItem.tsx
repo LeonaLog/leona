@@ -38,7 +38,7 @@ type ContainerProps = {
 const Container = styled.div<ContainerProps>(({ theme: { colors, fonts }, isSelected, sidebarIsPinned }) => css`
   position: relative;
   z-index: 4; /* to render over SidebarNav::before */
-  width: 100%;
+  // width: 50px;
   height: 50px;
   text-align: center;
   cursor: pointer;
