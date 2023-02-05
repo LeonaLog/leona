@@ -4,7 +4,7 @@
 <div align="center">
     <img src="https://raw.githubusercontent.com/LeonaLog/leona/main/misc/assets/graylog.svg" width=120 alt="logo" />
     <br />
-    <small>Security and log data done right</small>
+    <small>Security and Log Data Done Right</small>
 </div>
 
 # Leona
@@ -15,9 +15,21 @@
 
 ![leona-hero](./misc/assets/leona-hero.png)
 
-Welcome! _Leona_ is an open source log management platform.
+Welcome! A centralized Log Management System (LMS) like LeonoLog provides a means to aggregate, organize, and make sense of all this data
 
 You can read more about the project on our [LeonaLog Tutorial](https://ciusji.gitbook.io/leona).
+
+## Main Features
+
+There are many features that enhance LeonaLog usefulness as a flexible tool:
+
+- Streams operate as a form of tagging for incoming messages. Streams route messages into categories in real time, and team rules instruct LeonaLog to route messages into the appropriate stream.
+- The LeonaLog Search page is the interface used to search logs directly. LeonaLog uses a simplified syntax, very similar to Lucene. Relative or absolute time ranges are configurable from drop down menus. Searches may be saved or visualized as dashboard widgets that may be added directly to dashboards from within the search screen.
+- Users may configure their own views and may choose to see either a summary or complete data from event messages.
+- LeonaLog Dashboards are visualizations or summaries of information contained in log events. Each dashboard is populated by one or more widgets. Widgets visualize or summarize event log data with data derived from field values such as counts, averages, or totals. Users can create indicators, charts, graphs, and maps to visualize the data.
+- Alerts are created using Event Definitions that consist of Conditions. When a given condition is met it will be stored as an Event and can be used to trigger a notification.
+- An Index is the basic unit of storage for data in OpenSearch and Elasticsearch. Index sets provide configuration for retention, sharding, and replication of the stored data. Values, like retention and rotation strategy, are set on a per-index basis, so different data may be subjected to different handling rules.
+- LeonaLog's Processing Pipelines enable the user to run a rule, or a series of rules, against a specific type of event. Tied to streams, pipelines allow routing, denylisting, modification, and enrichment of messages as they flow through LeonaLog.
 
 ## Quickstart
 
