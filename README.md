@@ -9,9 +9,13 @@
 
 # Leona
 
-[![License](https://img.shields.io/badge/license-SSPL-green)](https://www.mongodb.com/licensing/server-side-public-license)
-[![Maven Central](https://img.shields.io/maven-central/v/org.graylog2/graylog2-server.svg)](http://mvnrepository.com/artifact/org.graylog2/graylog2-server)
-[![Build](https://github.com/Graylog2/graylog2-server/actions/workflows/build.yml/badge.svg)](https://github.com/Graylog2/graylog2-server/actions/workflows/build.yml)
+[What's LeonaLog](https://ciusji.gitbook.io/leona/) |
+[Log Collection](https://ciusji.gitbook.io/leona/installation/log-collection) |
+[Server Configuration](https://ciusji.gitbook.io/leona/configuration/server-conf) | 
+[Log Source](https://ciusji.gitbook.io/leona/getting-in/log-sources) | 
+[Log Sense](https://ciusji.gitbook.io/leona/making-sense/pipelines) |
+[Leona Ecosystem](https://ciusji.gitbook.io/leona/appendix/ecosystem) |
+[FAQs](https://ciusji.gitbook.io/leona/appendix/faqs)
 
 ![leona-hero](./misc/assets/leona-hero.png)
 
