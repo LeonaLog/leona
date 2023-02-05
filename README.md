@@ -15,7 +15,7 @@
 
 ![leona-hero](./misc/assets/leona-hero.png)
 
-Welcome! A centralized Log Management System (LMS) like LeonoLog provides a means to aggregate, organize, and make sense of all this data
+Welcome! A centralized Log Management System (LMS) like LeonaLog provides a means to aggregate, organize, and make sense of all this data
 
 You can read more about the project on our [LeonaLog Tutorial](https://ciusji.gitbook.io/leona).
 
@@ -36,16 +36,13 @@ There are many features that enhance LeonaLog usefulness as a flexible tool:
 ```shell
 git clone git@github.com:LeonaLog/leona.git
 cd leona
-# JAVA_HOME=?17.jdk/Contents/Home !!!
+# JAVA_HOME=?17.jdk/Contents/Home
 mvn clean package -DskipTests
 
 # Start server in dev model
 java -cp org.graylog2.bootstrap.Main server --configfile=/Users/admin/.graylog/server/server.conf
-
-# Start web in dev model
-cd graylog2-web-interface
-yarn start
 ```
+Then open your browser with http://lolahost:9000 ✌ 
 
 Server configuration detail:
 
@@ -64,11 +61,11 @@ http_bind_address = 127.0.0.1:9000
 
 ## Elasticsearch / OpenElasticsearch
 elasticsearch_max_docs_per_index = 20000000
-elasticsearch_index_prefix = graylog
+elasticsearch_index_prefix = leonalog
 elasticsearch_max_number_of_indices = 20
 elasticsearch_shards = 1
 elasticsearch_replicas = 0
-elasticsearch_hosts = http://xxx:9200
+elasticsearch_hosts = http://localhost:9200
 elasticsearch_analyzer = standard
 elasticsearch_disable_version_check = true
 
@@ -80,7 +77,7 @@ processor_wait_strategy = sleeping
 ring_size = 1024
 
 ## MongoDB
-mongodb_uri = mongodb://xxx:27017/graylog
+mongodb_uri = mongodb://localhost:27017/leonalog
 mongodb_max_connections = 100
 mongodb_threads_allowed_to_block_multiplier = 5
 ```
@@ -91,6 +88,7 @@ mongodb_threads_allowed_to_block_multiplier = 5
 - Installation
   - [Docker](https://ciusji.gitbook.io/leona/installation/docker)
   - [Manual Setup](https://ciusji.gitbook.io/leona/installation/manual-setup)
+  - [Log Collection](https://ciusji.gitbook.io/leona/installation/log-collection)
 - Configuration
   - [Server Conf](https://ciusji.gitbook.io/leona/configuration/server-conf)
   - [Web Interface](https://ciusji.gitbook.io/leona/configuration/web-interface)
@@ -102,8 +100,14 @@ mongodb_threads_allowed_to_block_multiplier = 5
   - [Using ModSecurity](https://ciusji.gitbook.io/leona/security/using-modsecurity)
   - [Logging User Activity](https://ciusji.gitbook.io/leona/security/logging-user-activity)
   - [The URL Whitelist](https://ciusji.gitbook.io/leona/security/the-url-whitelist)
-- Dashboards
-  - [Leona Dashboard](https://ciusji.gitbook.io/leona/dashboards/leona-dashboard)
+- Getting In
+  - [Log Sources](https://ciusji.gitbook.io/leona/getting-in/log-sources)
+  - [Sidecar](https://ciusji.gitbook.io/leona/getting-in/sidecar)
+  - [Forwarder](https://ciusji.gitbook.io/leona/getting-in/forwarder/forward-installation)
+- Making Sense
+  - [Pipelines](https://ciusji.gitbook.io/leona/making-sense/pipelines)
+  - [Streams](https://ciusji.gitbook.io/leona/making-sense/streams)
+  - [Enrichment](https://ciusji.gitbook.io/leona/making-sense/enrichment)
 - Alerts & Notifications 
   - [Alerts And Events](https://ciusji.gitbook.io/leona/alerts-and-notifications/alerts-and-events)
   - [Alerting By Example](https://ciusji.gitbook.io/leona/alerts-and-notifications/alerting-by-example)
