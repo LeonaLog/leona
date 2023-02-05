@@ -67,12 +67,12 @@ const ErrorFallback = ({ error, resetErrorBoundary }) => {
   return (
     <Alert bsStyle="danger">
       {isCloud ? (
-        <p>Error loading login screen, please contact your Graylog account manager.</p>
+        <p>Error loading login screen, please contact your LeonaLog account manager.</p>
       ) : (
         <>
           <p>
             Error using active authentication service login. Please check its configuration or contact your
-            Graylog account manager. Error details:
+            LeonaLog account manager. Error details:
           </p>
           <StyledPre>{error.message}</StyledPre>
           <Button bsStyle="danger" onClick={resetErrorBoundary}>Login with default method</Button>
@@ -166,7 +166,7 @@ const LoginPage = () => {
   return (
     <DocumentTitle title="Sign in">
       <LoginBox>
-        <legend><Icon name="users" /> Welcome to Graylog</legend>
+        <legend><Icon name="users" /> Welcome to LeonaLog</legend>
         <LoginPageStyles />
         {formatLastError()}
         {renderLoginForm()}
