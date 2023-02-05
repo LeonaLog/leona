@@ -69,11 +69,11 @@ const EnterprisePage = () => {
               <BiggerFontSize>
                 <p>
                   Designed to meet the needs of resource-constrained IT Operations and Software Engineering teams,
-                  Graylog Operations provides numerous productivity enhancements that will save you thousands of
+                  leona Operations provides numerous productivity enhancements that will save you thousands of
                   hours per year in collecting and analyzing log data to uncover the root cause of performance,
                   outage, and error issues.
                 </p>
-                <ProductLinkComponent href="https://go2.graylog.org/request-graylog-operations" clusterId={clusterId}>
+                <ProductLinkComponent href="https://ciusji.gitbook.io/leona/" clusterId={clusterId}>
                   Request now
                 </ProductLinkComponent>
               </BiggerFontSize>

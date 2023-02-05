@@ -53,7 +53,7 @@ const LinkTo = () => {
 
   return (
     <p>
-      Please see <a href="https://www.graylog.org/products/enterprise" rel="noopener noreferrer" target="_blank">our product page</a> for details.
+      Please see <a href="https://ciusji.gitbook.io/leona/" rel="noopener noreferrer" target="_blank">our product page</a> for details.
     </p>
   );
 };
