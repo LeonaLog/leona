@@ -22,10 +22,10 @@ module.exports = function loadBuildConfig(filename) {
     const buildConfig = require(filename);
     if (!buildConfig.web_src_path || !fs.lstatSync(buildConfig.web_src_path).isDirectory()) {
       /* eslint-disable no-console */
-      console.error('Path to graylog web interface sources is not defined, does not exist or is not a directory: (', buildConfig.web_src_path, ').');
+      console.error('Path to LeonaLog web interface sources is not defined, does not exist or is not a directory: (', buildConfig.web_src_path, ').');
       console.error('Please configure it in a file named `build.config.js` before trying to build the plugin.');
       // TODO: add link to documentation
-      console.error('For further information please check http://docs.graylog.org/PLACEHOLDER');
+      console.error('For further information please check https://ciusji.gitbook.io/leona');
       process.exit(-1);
       /* eslint-enable no-console */
     }

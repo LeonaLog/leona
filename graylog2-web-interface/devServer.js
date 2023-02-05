@@ -46,7 +46,7 @@ const apiUrl = argv.apiUrl || process.env.GRAYLOG_API_URL || DEFAULT_API_URL;
 
 // Proxy all "/api" requests to the server backend API.
 // eslint-disable-next-line no-console
-console.log(`Graylog web interface forwarding /api requests to ${apiUrl}`);
+console.log(`LeonaLog web interface forwarding /api requests to ${apiUrl}`);
 
 app.use('/api', proxy(apiUrl, {
   proxyReqPathResolver(req) {
@@ -81,7 +81,7 @@ const server = http.createServer(app);
 server
   .listen(port, host, () => {
     // eslint-disable-next-line no-console
-    console.log(`Graylog web interface listening on http://${server.address().address}:${server.address().port}!\n`);
+    console.log(`LeonaLog web interface listening on http://${server.address().address}:${server.address().port}!\n`);
   })
   .on('error', (error) => {
     if (error.code === 'EADDRINUSE') {

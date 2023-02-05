@@ -23,7 +23,7 @@ type Props = {
 
 const EnterpriseProductLink = ({ children }: Props) => {
   return (
-    <a href="https://www.graylog.org/products/enterprise"
+    <a href="https://ciusji.gitbook.io/leona/"
        rel="noopener noreferrer"
        target="_blank">
       {children}

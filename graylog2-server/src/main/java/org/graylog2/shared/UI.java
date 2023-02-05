@@ -21,9 +21,9 @@ import org.slf4j.LoggerFactory;
 
 public class UI {
 
-    private static final String HELP_DOCS = "http://docs.graylog.org/";
-    private static final String HELP_COMMUNITY = "https://www.graylog.org/community-support/";
-    private static final String HELP_COMMERCIAL = "https://www.graylog.com/technical-support/";
+    private static final String HELP_DOCS = "https://ciusji.gitbook.io/leona/";
+    private static final String HELP_COMMUNITY = "https://ciusji.gitbook.io/leona/";
+    private static final String HELP_COMMERCIAL = "https://ciusji.gitbook.io/leona/";
 
     private static final Logger LOG = LoggerFactory.getLogger(UI.class);
 

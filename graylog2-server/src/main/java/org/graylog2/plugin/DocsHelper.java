@@ -22,7 +22,7 @@ public enum DocsHelper {
     PAGE_ES_CONFIGURATION("elasticsearch"),
     PAGE_ES_VERSIONS("elasticsearch#elasticsearch-versions");
 
-    private static final String DOCS_URL = "https://docs.graylog.org/docs/";
+    private static final String DOCS_URL = "https://ciusji.gitbook.io/leona/";
 
     private final String path;
 
