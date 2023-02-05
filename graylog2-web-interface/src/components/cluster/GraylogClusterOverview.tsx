@@ -47,7 +47,7 @@ const StyledH3 = styled.h3(({ theme }: { theme: DefaultTheme }) => css`
   margin-bottom: ${theme.spacings.sm};
 `);
 
-const Header = () => <StyledH2>Graylog cluster</StyledH2>;
+const Header = () => <StyledH2>Leona cluster</StyledH2>;
 
 const ClusterInfo = () => {
   const nodes = useStore(NodesStore);

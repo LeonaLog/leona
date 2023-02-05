@@ -35,7 +35,7 @@ const HighlightingRules = () => {
   return (
     <>
       <SectionInfo>
-        Search terms and field values can be highlighted. Highlighting your search query in the results can be enabled/disabled in the graylog server config.
+        Search terms and field values can be highlighted. Highlighting your search query in the results can be enabled/disabled in the leona server config.
         Any field value can be highlighted by clicking on the value and selecting &quot;Highlight this value&quot;.
         If a term or a value has more than one rule, the last matching rule is used.
       </SectionInfo>

@@ -32,12 +32,12 @@ const SystemOutputsPage = createReactClass({
         <span>
           <PageHeader title="Outputs in Cluster">
             <span>
-              Graylog nodes can forward messages via outputs. Launch or terminate as many outputs as you want here{' '}
+              Leona nodes can forward messages via outputs. Launch or terminate as many outputs as you want here{' '}
               <strong>and then assign them to streams to forward all messages of a stream in real-time.</strong>
             </span>
 
             <span>
-              You can find output plugins in <a href="https://marketplace.graylog.org/" target="_blank" rel="noreferrer">the Graylog Marketplace</a>.
+              You can find output plugins in <a href="https://github.com/LeonaLog" target="_blank" rel="noreferrer">the Leona Marketplace</a>.
             </span>
           </PageHeader>
 

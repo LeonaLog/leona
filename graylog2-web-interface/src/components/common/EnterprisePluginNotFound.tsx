@@ -47,7 +47,7 @@ const EnterprisePluginNotFound = ({ featureName, wrapperClassName }: Props) => (
       </Header>
     </Panel.Heading>
     <Panel.Body>
-      To use the <b>{featureName}</b> functionality you need the <a href="https://www.graylog.org/products/enterprise" rel="noopener noreferrer" target="_blank">Graylog Enterprise license</a> and the <DocumentationLink page={DocsHelper.PAGES.ENTERPRISE_SETUP} text="Graylog Enterprise plugin" />.
+      To use the <b>{featureName}</b> functionality you need the <a href="https://www.graylog.org/products/enterprise" rel="noopener noreferrer" target="_blank">Leona Enterprise license</a> and the <DocumentationLink page={DocsHelper.PAGES.ENTERPRISE_SETUP} text="Leona Enterprise plugin" />.
     </Panel.Body>
   </Panel>
 );

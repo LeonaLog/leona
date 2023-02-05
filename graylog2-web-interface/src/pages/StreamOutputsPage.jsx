@@ -68,11 +68,11 @@ const StreamOutputsPage = createReactClass({
               </h1>
 
               <p className="description">
-                Graylog nodes can forward messages of streams via outputs. Launch or terminate as many outputs as you want here.
+                Leona nodes can forward messages of streams via outputs. Launch or terminate as many outputs as you want here.
                 You can also reuse outputs that are already running for other streams.
 
                 A global view of all configured outputs is available <Link to={Routes.SYSTEM.OUTPUTS}>here</Link>.
-                You can find output plugins on <a href="https://marketplace.graylog.org/" rel="noopener noreferrer" target="_blank">the Graylog Marketplace</a>.
+                You can find output plugins on <a href="https://github.com/LeonaLog" rel="noopener noreferrer" target="_blank">the LeonaLog Marketplace</a>.
               </p>
 
               <SupportLink>

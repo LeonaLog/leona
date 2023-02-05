@@ -36,7 +36,7 @@ const SidecarConfigurationPage = () => (
 
         <span>
           Read more about the collector sidecar in the{' '}
-          <DocumentationLink page={DocsHelper.PAGES.COLLECTOR_SIDECAR} text="Graylog documentation" />.
+          <DocumentationLink page={DocsHelper.PAGES.COLLECTOR_SIDECAR} text="Leona documentation" />.
         </span>
 
         <ButtonToolbar>

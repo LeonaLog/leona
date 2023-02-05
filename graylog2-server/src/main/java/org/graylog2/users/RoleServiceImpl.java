@@ -83,9 +83,9 @@ public class RoleServiceImpl implements RoleService {
 
         // make sure the two built-in roles actually exist
         adminRoleObjectId = checkNotNull(ensureBuiltinRole(ADMIN_ROLENAME, Sets.newHashSet("*"), "Admin",
-                                                           "Grants all permissions for Graylog administrators (built-in)"));
+                                                           "Grants all permissions for leona administrators (built-in)"));
         readerRoleObjectId = checkNotNull(ensureBuiltinRole(READER_ROLENAME, permissions.readerBasePermissions(), "Reader",
-                          "Grants basic permissions for every Graylog user (built-in)"));
+                          "Grants basic permissions for every leona user (built-in)"));
 
     }
 
@@ -117,12 +117,12 @@ public class RoleServiceImpl implements RoleService {
                 final RoleImpl savedRole = save(fixedAdmin);
                 return savedRole.getId();
             } catch (DuplicateKeyException | ValidationException e) {
-                log.error("Unable to save fixed " + roleName + " role, please restart Graylog to fix this.", e);
+                log.error("Unable to save fixed " + roleName + " role, please restart leona to fix this.", e);
             }
         }
 
         if (previousRole == null) {
-            log.error("Unable to access fixed " + roleName + " role, please restart Graylog to fix this.");
+            log.error("Unable to access fixed " + roleName + " role, please restart leona to fix this.");
             return null;
         }
 

@@ -27,12 +27,12 @@ class NotificationsFactory {
     switch (notification.type) {
       case 'check_server_clocks':
         return {
-          title: 'Check the system clocks of your Graylog server nodes.',
+          title: 'Check the system clocks of your leona server nodes.',
           description: (
             <span>
-              A Graylog server node detected a condition where it was deemed to be inactive immediately after being active.
-              This usually indicates either a significant jump in system time, e.g. via NTP, or that a second Graylog server node
-              is active on a system that has a different system time. Please make sure that the clocks of graylog2 systems are synchronized.
+              A leona server node detected a condition where it was deemed to be inactive immediately after being active.
+              This usually indicates either a significant jump in system time, e.g. via NTP, or that a second leona server node
+              is active on a system that has a different system time. Please make sure that the clocks of leona systems are synchronized.
             </span>
           ),
         };
@@ -55,7 +55,7 @@ class NotificationsFactory {
           description: (
             <span>
               The configuration for the email transport subsystem has shown to be missing or invalid.
-              Please check the related section of your Graylog server configuration file.
+              Please check the related section of your leona server configuration file.
               This is the detailed error message: {notification.details.exception}
             </span>
           ),
@@ -66,7 +66,7 @@ class NotificationsFactory {
           title: 'An error occurred while trying to send an email!',
           description: (
             <span>
-              The Graylog server encountered an error while trying to send an email.
+              The leona server encountered an error while trying to send an email.
               This is the detailed error message: {notification.details.exception}
             </span>
           ),
@@ -78,7 +78,7 @@ class NotificationsFactory {
           description: (
             <span>
               The Elasticsearch cluster state is RED which means shards are unassigned.
-              This usually indicates a crashed and corrupt cluster and needs to be investigated. Graylog will write
+              This usually indicates a crashed and corrupt cluster and needs to be investigated. leona will write
               into the local disk journal. Read how to fix this in {' '}
               <DocumentationLink page={DocsHelper.PAGES.ES_CLUSTER_STATUS_RED} text="the Elasticsearch setup documentation." />
             </span>
@@ -104,7 +104,7 @@ class NotificationsFactory {
           title: 'Elasticsearch cluster unavailable',
           description: (
             <span>
-              Graylog could not successfully connect to the Elasticsearch cluster. If you are using multicast, check that
+              Leona could not successfully connect to the Elasticsearch cluster. If you are using multicast, check that
               it is working in your network and that Elasticsearch is accessible. Also check that the cluster name setting
               is correct. Read how to fix this in {' '}
               <DocumentationLink page={DocsHelper.PAGES.ES_CLUSTER_UNAVAILABLE}
@@ -118,7 +118,7 @@ class NotificationsFactory {
           title: 'Nodes with too long GC pauses',
           description: (
             <span>
-              There are Graylog nodes on which the garbage collector runs too long.
+              There are leona nodes on which the garbage collector runs too long.
               Garbage collection runs should be as short as possible. Please check whether those nodes are healthy.
               (Node: <em>{notification.node_id}</em>, GC duration: <em>{notification.details.gc_duration_ms} ms</em>,
               GC threshold: <em>{notification.details.gc_threshold_ms} ms</em>)
@@ -206,7 +206,7 @@ class NotificationsFactory {
           description: (
             <span>
               Journal utilization is too high and may go over the limit soon. Please verify that your Elasticsearch cluster
-              is healthy and fast enough. You may also want to review your Graylog journal settings and set a higher limit.
+              is healthy and fast enough. You may also want to review your leona journal settings and set a higher limit.
               (Node: <em>{notification.node_id}</em>)
             </span>
           ),
@@ -214,12 +214,12 @@ class NotificationsFactory {
 
       case 'multi_leader':
         return {
-          title: 'Multiple Graylog server leaders in the cluster',
+          title: 'Multiple leona server leaders in the cluster',
           description: (
             <span>
-              There were multiple Graylog server instances configured as leader in your Graylog cluster. The cluster handles
+              There were multiple leona server instances configured as leader in your leona cluster. The cluster handles
               this automatically by launching new nodes as followers if there already is a leader but you should still fix this.
-              Check the graylog.conf of every node and make sure that only one instance has is_leader set to true. Close this
+              Check the leona.conf of every node and make sure that only one instance has is_leader set to true. Close this
               notification if you think you resolved the problem. It will pop back up if you start a second leader node again.
             </span>
           ),
@@ -241,11 +241,11 @@ class NotificationsFactory {
 
       case 'no_leader':
         return {
-          title: 'There was no leader Graylog server node detected in the cluster.',
+          title: 'There was no leader leona server node detected in the cluster.',
           description: (
             <span>
-              Certain operations of Graylog server require the presence of a leader node, but no such leader was started.
-              Please ensure that one of your Graylog server nodes contains the setting <code>is_leader = true</code> in its
+              Certain operations of leona server require the presence of a leader node, but no such leader was started.
+              Please ensure that one of your leona server nodes contains the setting <code>is_leader = true</code> in its
               configuration and that it is running. Until this is resolved index cycling will not be able to run, which
               means that the index retention mechanism is also not running, leading to increased index sizes. Certain
               maintenance functions as well as a variety of web interface pages (e.g. Dashboards) are unavailable.
@@ -255,10 +255,10 @@ class NotificationsFactory {
 
       case 'outdated_version':
         return {
-          title: 'You are running an outdated Graylog version.',
+          title: 'You are running an outdated leona version.',
           description: (
             <span>
-              The most recent stable Graylog version is <em>{notification.details.current_version}</em>.
+              The most recent stable leona version is <em>{notification.details.current_version}</em>.
               See what&apos;s new in the <DocumentationLink page={DocsHelper.PAGES.CHANGELOG} text="Open" />{' '}
               and <DocumentationLink page={DocsHelper.PAGES.OPERATIONS_CHANGELOG} text="Operations" /> changelogs!
             </span>
@@ -356,8 +356,8 @@ class NotificationsFactory {
           description: (
             <span>
               The Elasticsearch version which is currently running ({currentVersion}) has a different major version than
-              the one the Graylog leader node was started with ({initialVersion}).{' '}
-              This will most probably result in errors during indexing or searching. Graylog requires a full restart after an
+              the one the leona leader node was started with ({initialVersion}).{' '}
+              This will most probably result in errors during indexing or searching. leona requires a full restart after an
               Elasticsearch upgrade from one major version to another.
               <br />
               For details, please see our notes about{' '}
@@ -399,7 +399,7 @@ class NotificationsFactory {
           title: 'The following indices could not be archived yet',
           description: (
             <span>
-              There was an error while archiving some indices. Graylog will continue trying to archive those
+              There was an error while archiving some indices. leona will continue trying to archive those
               indices and will retain all indices until they are successfully archived.
               <br />
               Please check the following error messages as your assistance may be necessary to resolve the issue:

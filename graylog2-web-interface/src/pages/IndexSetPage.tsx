@@ -119,12 +119,10 @@ class IndexSetPage extends React.Component<Props, State> {
                    header={<span><Icon name="exclamation-triangle" /> Indices overview unavailable</span>}>
               <p>
                 We could not get the indices overview information. This usually means there was a problem
-                connecting to Elasticsearch, and <strong>you should ensure Elasticsearch is up and reachable from
-                  Graylog
-                                                 </strong>.
+                connecting to Elasticsearch, and <strong>you should ensure Elasticsearch is up and reachable from Leona</strong>.
               </p>
               <p>
-                Graylog will continue storing your messages in its journal, but you will not be able to search on them
+                Leona will continue storing your messages in its journal, but you will not be able to search on them
                 until Elasticsearch is reachable again.
               </p>
             </Panel>
@@ -150,7 +148,7 @@ class IndexSetPage extends React.Component<Props, State> {
     const pageHeader = indexSet && (
       <PageHeader title={`Index Set: ${indexSet.title}`}>
         <span>
-          This is an overview of all indices (message stores) in this index set Graylog is currently taking in account
+          This is an overview of all indices (message stores) in this index set leona is currently taking in account
           for searches and analysis.
         </span>
 

@@ -21,7 +21,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 import { useQuery } from 'react-query';
 import { ErrorBoundary } from 'react-error-boundary';
 
-import { DocumentTitle, Icon } from 'components/common';
+import { DocumentTitle } from 'components/common';
 import { Alert, Button } from 'components/bootstrap';
 import LoginForm from 'components/login/LoginForm';
 import LoginBox from 'components/login/LoginBox';
@@ -30,6 +30,7 @@ import AuthenticationDomain from 'domainActions/authentication/AuthenticationDom
 import AppConfig from 'util/AppConfig';
 import { LOGIN_INITIALIZING_STATE, LOGIN_INITIALIZED_STATE } from 'logic/authentication/constants';
 import { SessionActions } from 'stores/sessions/SessionStore';
+import Logo from 'assets/leona.svg';
 
 import LoadingPage from './LoadingPage';
 
@@ -41,6 +42,13 @@ const StyledButton = styled(Button)`
   margin-top: 1em;
   display: inline-block;
   cursor: pointer;
+`;
+
+const StyledLogo = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-Bottom: 50px;
 `;
 
 const StyledPre = styled.pre`
@@ -166,7 +174,12 @@ const LoginPage = () => {
   return (
     <DocumentTitle title="Sign in">
       <LoginBox>
-        <legend><Icon name="users" /> Welcome to LeonaLog</legend>
+        <StyledLogo>
+          <img src={Logo} width={66} alt="logo" />
+        </StyledLogo>
+        <legend>
+          Welcome
+        </legend>
         <LoginPageStyles />
         {formatLastError()}
         {renderLoginForm()}

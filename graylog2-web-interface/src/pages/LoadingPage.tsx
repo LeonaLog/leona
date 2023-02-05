@@ -18,7 +18,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { createGlobalStyle } from 'styled-components';
 
-import { DocumentTitle, Spinner, Icon } from 'components/common';
+import { DocumentTitle, Spinner } from 'components/common';
 import LoginBox from 'components/login/LoginBox';
 import authStyles from 'theme/styles/authStyles';
 
@@ -35,7 +35,7 @@ const LoadingPage = ({ text }: Props) => {
     <DocumentTitle title="Loading...">
       <LoadingPageStyles />
       <LoginBox>
-        <legend><Icon name="users" /> Welcome to Leona</legend>
+        <legend>Welcome to LeonaLog</legend>
         <p>
           <Spinner text={text} delay={0} />
         </p>

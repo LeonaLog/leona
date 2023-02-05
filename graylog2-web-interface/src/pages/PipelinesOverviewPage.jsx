@@ -36,7 +36,7 @@ const PipelinesOverviewPage = () => (
           rules are evaluated and applied. Messages can go through one or more stages.
         </span>
         <span>
-          Read more about Graylog pipelines in the <DocumentationLink page={DocsHelper.PAGES.PIPELINES} text="documentation" />.
+          Read more about leona pipelines in the <DocumentationLink page={DocsHelper.PAGES.PIPELINES} text="documentation" />.
         </span>
 
         <span>

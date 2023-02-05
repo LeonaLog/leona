@@ -62,7 +62,7 @@ class SimulatorPage extends React.Component {
               message using your current set of pipelines and rules.
             </span>
             <span>
-              Read more about Graylog pipelines in the <DocumentationLink page={DocsHelper.PAGES.PIPELINES} text="documentation" />.
+              Read more about leona pipelines in the <DocumentationLink page={DocsHelper.PAGES.PIPELINES} text="documentation" />.
             </span>
 
             <span>

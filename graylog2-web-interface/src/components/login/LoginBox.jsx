@@ -26,7 +26,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 25vh;
+  padding-top: 15vh;
   flex-direction: column;
   height: 100%;
   
@@ -43,13 +43,17 @@ const Wrapper = styled.div`
 const LoginCol = styled(Col)(({ theme }) => css`
   padding: 15px;
   background-color: ${theme.colors.global.contentBackground};
-  border: 1px solid ${theme.colors.variant.light.default};
+  border: 1px solid #c9cace;
   border-radius: 4px;
   box-shadow: 0 0 21px ${theme.colors.global.navigationBoxShadow};
   
   legend {
-    color: ${theme.colors.variant.darker.default};
-    border-color: ${theme.colors.variant.dark.default};
+    // color: ${theme.colors.variant.darker.default};
+    // border-color: ${theme.colors.variant.dark.default};
+    border-bottom: none;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
   }
 `);
 

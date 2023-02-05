@@ -44,7 +44,7 @@ const NodesPage = createReactClass({
 
     if (this._hasExternalURI()) {
       return (
-        <ExternalLinkButton bsStyle="info" href={URLUtils.qualifyUrl(GLOBAL_API_BROWSER_URL)}>
+        <ExternalLinkButton bsStyle="info" href={URLUtils.qualifyUrl(GLOBAL_API_BROWSER_URL)} disabled>
           Cluster Global API browser
         </ExternalLinkButton>
       );
@@ -68,7 +68,7 @@ const NodesPage = createReactClass({
       <DocumentTitle title="Nodes">
         <div>
           <PageHeader title="Nodes">
-            <span>This page provides a real-time overview of the nodes in your Graylog cluster.</span>
+            <span>This page provides a real-time overview of the nodes in your leona cluster.</span>
 
             <span>
               You can pause message processing at any time. The process buffers will not accept any new messages until

@@ -77,7 +77,7 @@ const HTTPHeaderAuthConfigSection = () => {
             <Row>
               <Col mdOffset={3} md={9}>
                 <Alert bsStyle="info">
-                  <Icon name="info-circle" /> Please configure the <code>trusted_proxies</code> setting in the Graylog server configuration file.
+                  <Icon name="info-circle" /> Please configure the <code>trusted_proxies</code> setting in the leona server configuration file.
                 </Alert>
               </Col>
             </Row>

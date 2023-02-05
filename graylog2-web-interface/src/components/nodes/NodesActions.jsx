@@ -69,7 +69,7 @@ class NodesActions extends React.Component {
           <Button bsStyle="info">Metrics</Button>
         </LinkContainer>
 
-        <ExternalLinkButton bsStyle="info" href={apiBrowserURI}>
+        <ExternalLinkButton bsStyle="info" href={apiBrowserURI} disabled>
           API browser
         </ExternalLinkButton>
 

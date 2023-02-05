@@ -26,7 +26,7 @@ class LoggersPage extends React.Component {
         <span>
           <PageHeader title="Logging">
             <span>
-              This section controls logging of the Graylog architecture and allows you to change log
+              This section controls logging of the leona architecture and allows you to change log
               levels on the fly. Note that log levels are reset to their defaults after you restart
               the affected service.
             </span>

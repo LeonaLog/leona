@@ -21,7 +21,7 @@
         "throughput:read",
         "messages:read"
       ],
-      "description": "Grants basic permissions for every Graylog user (built-in)",
+      "description": "Grants basic permissions for every leona user (built-in)",
       "read_only": true,
       "name_lower": "reader"
     },
@@ -72,7 +72,7 @@
       "permissions": [
         "*"
       ],
-      "description": "Grants all permissions for Graylog administrators (built-in)",
+      "description": "Grants all permissions for leona administrators (built-in)",
       "read_only": true,
       "name_lower": "admin"
     },

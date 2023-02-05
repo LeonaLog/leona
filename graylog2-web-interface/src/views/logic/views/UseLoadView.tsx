@@ -26,7 +26,7 @@ import usePluginEntities from '../../../hooks/usePluginEntities';
 
 const LoadViewError = ({ error }: { error: Error }) => (
   <ErrorPage title="Something went wrong"
-             description={<p>An unknown error has occurred. Please have a look at the following message and the graylog server log for more information.</p>}>
+             description={<p>An unknown error has occurred. Please have a look at the following message and the leona server log for more information.</p>}>
     <pre>
       {error?.message}
     </pre>

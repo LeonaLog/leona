@@ -106,7 +106,7 @@ end`;
       <p style={{ marginBottom: 10, padding: 0 }}>
         This is the <em>User-Agent</em> header that will be used for the HTTP requests. You should include some
         contact details so owners of the services you query know whom to contact if issues arise.
-        (like excessive API requests from your Graylog cluster)
+        (like excessive API requests from your leona cluster)
       </p>
 
       <hr />

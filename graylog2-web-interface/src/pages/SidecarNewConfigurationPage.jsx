@@ -41,7 +41,7 @@ const SidecarNewConfigurationPage = createReactClass({
             </span>
 
             <span>
-              Read more about the Graylog Sidecar in the documentation.
+              Read more about the leona Sidecar in the documentation.
             </span>
 
             <ButtonToolbar>

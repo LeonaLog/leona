@@ -18,15 +18,15 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import styled, { createGlobalStyle, css } from 'styled-components';
 
-import NotFoundBackgroundImage from 'assets/not-found-bg.jpg';
+import NotFoundBackgroundImage from 'assets/bk.jpg';
 import PageContentLayout from 'components/layout/PageContentLayout';
 import DocumentTitle from 'components/common/DocumentTitle';
 import ErrorJumbotron from 'components/errors/ErrorJumbotron';
 
 const generateStyles = () => css`
   body {
-    // background: url(${({ backgroundImage }: { backgroundImage: string }) => backgroundImage}) no-repeat center center fixed;
-    // background-size: cover;
+    background: url(${({ backgroundImage }: { backgroundImage: string }) => backgroundImage}) no-repeat center center fixed;
+    background-size: cover;
   }
 `;
 

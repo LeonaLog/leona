@@ -25,6 +25,10 @@ const StyledFormGroup = styled(FormGroup)`
   margin-bottom: 0;
 `;
 
+const StyledInput = styled(Input)`
+  height: 50px;
+`;
+
 const LoginForm = ({ onErrorChange }) => {
   const [isLoading, setIsLoading] = useState(false);
   let promise;
@@ -66,23 +70,24 @@ const LoginForm = ({ onErrorChange }) => {
 
   return (
     <form onSubmit={onSignInClicked}>
-      <Input ref={(username) => { usernameInput = username; }}
-             id="username"
-             type="text"
-             placeholder="Username"
-             autoFocus
-             required />
+      <StyledInput ref={(username) => { usernameInput = username; }}
+                   id="username"
+                   type="text"
+                   placeholder="Username"
+                   autoFocus
+                   required />
 
-      <Input ref={(password) => { passwordInput = password; }}
-             id="password"
-             type="password"
-             placeholder="Password"
-             required />
+      <StyledInput ref={(password) => { passwordInput = password; }}
+                   id="password"
+                   type="password"
+                   placeholder="Password"
+                   required />
 
       <StyledFormGroup>
-        <Button type="submit" bsStyle="info" disabled={isLoading}>
+        <Button type="submit" bsStyle="info" disabled={isLoading} style={{ width: '100%', marginTop: '24px', marginBottom: '24px', height: '50px', background: '#209dae', borderColor: '#209dae' }}>
           {isLoading ? 'Signing in...' : 'Sign in'}
         </Button>
+        <p>Don't have an account? Sign up</p>
       </StyledFormGroup>
     </form>
   );

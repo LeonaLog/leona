@@ -36,7 +36,7 @@ const InputsPage = () => {
     <DocumentTitle title="Inputs">
       <div>
         <PageHeader title="Inputs">
-          <span>Graylog nodes accept data via inputs. Launch or terminate as many inputs as you want here.</span>
+          <span>Leona nodes accept data via inputs. Launch or terminate as many inputs as you want here.</span>
         </PageHeader>
         <InputsList permissions={currentUser.permissions} />
       </div>

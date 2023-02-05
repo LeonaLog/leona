@@ -126,7 +126,7 @@ const CreateInputControl = createReactClass({
             </div>
             &nbsp;
             <Button bsStyle="success" type="submit" disabled={!selectedInput}>Launch new input</Button>
-            <ExternalLinkButton href="https://marketplace.graylog.org/"
+            <ExternalLinkButton href="https://ciusji.gitbook.io/leona/getting-in/log-sources"
                                 bsStyle="info"
                                 style={{ marginLeft: 10 }}>
               Find more inputs

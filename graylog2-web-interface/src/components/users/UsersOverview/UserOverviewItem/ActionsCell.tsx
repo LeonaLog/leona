@@ -52,7 +52,7 @@ const EditTokensAction = ({
 );
 
 const ReadOnlyActions = ({ user }: { user: UserOverview }) => {
-  const tooltip = <Tooltip id="system-user">System users can only be modified in the Graylog configuration file.</Tooltip>;
+  const tooltip = <Tooltip id="system-user">System users can only be modified in the leona configuration file.</Tooltip>;
 
   return (
     <>

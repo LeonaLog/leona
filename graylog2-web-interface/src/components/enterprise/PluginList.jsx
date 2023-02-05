@@ -45,7 +45,7 @@ const PluginList = createReactClass({
 
     return (
       <>
-        <p>This is the status of Graylog Enterprise modules in this cluster:</p>
+        <p>This is the status of leona Enterprise modules in this cluster:</p>
         <ul className={style.enterprisePlugins}>
           {enterprisePluginList}
         </ul>

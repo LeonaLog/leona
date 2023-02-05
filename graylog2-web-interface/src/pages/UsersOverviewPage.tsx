@@ -33,7 +33,7 @@ const UsersOverviewPage = () => (
                     <Button bsStyle="success">Create User</Button>
                   </LinkContainer>
                 )}>
-      <span>Overview of Graylog&apos;s registered users.</span>
+      <span>Overview of leona&apos;s registered users.</span>
 
       <span>
         Learn more in the{' '}
