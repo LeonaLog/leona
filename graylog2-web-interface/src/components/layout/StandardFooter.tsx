@@ -59,7 +59,7 @@ const StandardFooter = ({ system }: Props) => {
 
   if (!(system && jvm)) {
     return (
-      <>Graylog {getFullVersion()}</>
+      <>LeonaLog {getFullVersion()}</>
     );
   }
 
