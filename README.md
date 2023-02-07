@@ -20,7 +20,7 @@
 ![leona-hero](./misc/assets/leona-hero.png)
 
 Welcome! A centralized Log Management System (LMS) like LeonaLog provides a means to aggregate, organize, and make sense
-of all this data
+of all this data.
 
 You can read more about the project on our [LeonaLog Tutorial](https://ciusji.gitbook.io/leona).
 
@@ -43,7 +43,7 @@ There are many features that enhance LeonaLog usefulness as a flexible tool:
   retention, sharding, and replication of the stored data. Values, like retention and rotation strategy, are set on a
   per-index basis, so different data may be subjected to different handling rules.
 - LeonaLog's Processing Pipelines enable the user to run a rule, or a series of rules, against a specific type of event.
-  Tied to streams, pipelines allow routing, denylisting, modification, and enrichment of messages as they flow through
+  Tied to streams, pipelines allow routing, denying, modification, and enrichment of messages as they flow through
   LeonaLog.
 
 ## Quickstart
