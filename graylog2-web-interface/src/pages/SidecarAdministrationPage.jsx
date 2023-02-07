@@ -31,7 +31,7 @@ const SidecarAdministrationPage = ({ location: { query: { node_id: nodeId } } })
     <span>
       <PageHeader title="Collectors Administration">
         <span>
-          The Graylog collectors can reliably forward contents of log files or Windows EventLog from your servers.
+          The leona collectors can reliably forward contents of log files or Windows EventLog from your servers.
         </span>
 
         <span>

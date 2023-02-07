@@ -37,12 +37,12 @@ public class Elasticsearch7Metadata implements PluginMetaData {
 
     @Override
     public String getAuthor() {
-        return "Graylog, Inc.";
+        return "LeonaLog - GuinsooLab";
     }
 
     @Override
     public URI getURL() {
-        return URI.create("https://www.graylog.org");
+        return URI.create("https://ciusji.gitbook.io/leona/");
     }
 
     @Override
