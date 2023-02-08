@@ -58,7 +58,7 @@ class IndexerFailuresPage extends React.Component {
         <span>
           <PageHeader title="Indexer failures">
             <span>
-              This is a list of message index attempts that failed. A failure means that a message you sent to Graylog was{' '}
+              This is a list of message index attempts that failed. A failure means that a message you sent to leona was{' '}
               properly processed but writing it to the Elasticsearch cluster failed. Note that the list is capped to a size{' '}
               of 50 MB so it will contain a lot of failure logs but not necessarily all that ever occurred.
             </span>

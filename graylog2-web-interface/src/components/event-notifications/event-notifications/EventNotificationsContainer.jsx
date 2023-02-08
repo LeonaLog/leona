@@ -105,7 +105,7 @@ class EventNotificationsContainer extends React.Component {
             testResult = { isLoading: false, id: definition.id, error: true };
 
             if (errorResponse.status !== 400 || !errorResponse.additional.body || !errorResponse.additional.body.failed) {
-              testResult.message = errorResponse.responseMessage || 'Unknown errorResponse, please check your Graylog server logs.';
+              testResult.message = errorResponse.responseMessage || 'Unknown errorResponse, please check your leona server logs.';
             }
 
             return errorResponse;

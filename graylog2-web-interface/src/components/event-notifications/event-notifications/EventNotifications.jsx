@@ -69,7 +69,7 @@ class EventNotifications extends React.Component {
           <EmptyEntity>
             <p>
               Configure Event Notifications that can alert you when an Event occurs. You can also use Notifications
-              to integrate Graylog Alerts with an external alerting system you use.
+              to integrate leona Alerts with an external alerting system you use.
             </p>
             <IfPermitted permissions="eventnotifications:create">
               <LinkContainer to={Routes.ALERTS.NOTIFICATIONS.CREATE}>

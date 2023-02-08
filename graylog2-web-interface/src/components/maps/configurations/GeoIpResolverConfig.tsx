@@ -107,7 +107,7 @@ const GeoIpResolverConfig = ({ config = defaultConfig, updateConfig }: Props) =>
         <dd>{config.enabled === true ? 'Yes' : 'No'}</dd>
         {config.enabled && (
           <>
-            <dt>Enforce default Graylog schema:</dt>
+            <dt>Enforce default leona schema:</dt>
             <dd>{config.enforce_graylog_schema === true ? 'Yes' : 'No'}</dd>
             <dt>Database vendor type:</dt>
             <dd>{activeVendorType(config.db_vendor_type)}</dd>
@@ -152,7 +152,7 @@ const GeoIpResolverConfig = ({ config = defaultConfig, updateConfig }: Props) =>
                       <FormikInput id="enforce_graylog_schema"
                                    type="checkbox"
                                    disabled={!values.enabled}
-                                   label="Enforce default Graylog schema"
+                                   label="Enforce default leona schema"
                                    name="enforce_graylog_schema" />
                     </Col>
                   </Row>
