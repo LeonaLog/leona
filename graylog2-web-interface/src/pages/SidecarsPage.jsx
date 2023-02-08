@@ -42,7 +42,7 @@ const SidecarsPage = () => {
       <span>
         <PageHeader title="Sidecars Overview">
           <span>
-            The Graylog sidecars can reliably forward contents of log files or Windows EventLog from your servers.
+            The leona sidecars can reliably forward contents of log files or Windows EventLog from your servers.
           </span>
           {canCreateSidecarUserTokens && (
             sidecarUser ? (

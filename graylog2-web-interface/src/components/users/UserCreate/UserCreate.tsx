@@ -137,7 +137,7 @@ const EmailGroup = () => {
 };
 
 const UserCreate = () => {
-  const initialRole = { name: 'Reader', description: 'Grants basic permissions for every Graylog user (built-in)', id: '' };
+  const initialRole = { name: 'Reader', description: 'Grants basic permissions for every leona user (built-in)', id: '' };
   const [user, setUser] = useState(User.empty().toBuilder().roles(Immutable.Set([initialRole.name])).build());
   const [submitError, setSubmitError] = useState<RequestError | undefined>();
   const [selectedRoles, setSelectedRoles] = useState<Immutable.Set<DescriptiveItem>>(Immutable.Set([initialRole]));
