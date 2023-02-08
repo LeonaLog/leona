@@ -230,7 +230,7 @@ const UrlWhiteListForm = ({ urls, onUpdate, disabled, newEntryId }: Props) => {
              label="Disable Whitelist"
              checked={config.disabled}
              onChange={() => setConfig({ ...config, disabled: !config.disabled })}
-             help="Disable the whitelist functionality. Warning: Disabling this option will allow users to enter any URL in Graylog entities, which may pose a security risk." />
+             help="Disable the whitelist functionality. Warning: Disabling this option will allow users to enter any URL in leona entities, which may pose a security risk." />
       <Button bsSize="sm" onClick={(event) => _onAdd(event)}>Add Url</Button>
       <StyledTable striped bordered>
         <thead>
