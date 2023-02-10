@@ -49,13 +49,8 @@ There are many features that enhance LeonaLog usefulness as a flexible tool:
 ## Quickstart
 
 ```shell
-git clone git@github.com:LeonaLog/leona.git
-cd leona
-# JAVA_HOME=?17.jdk/Contents/Home
-mvn clean package -DskipTests
-
-# Start server in dev model
-java -cp org.graylog2.bootstrap.Main server --configfile=/Users/admin/.graylog/server/server.conf
+wget https://raw.githubusercontent.com/LeonaLog/leona/main/docker-compose.yml
+docker-compose -f docker-compose.yml up -d
 ```
 
 Then open your browser with http://lolahost:9000 ✌
