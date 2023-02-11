@@ -23,11 +23,11 @@
         <groupId>org.graylog</groupId>
         <artifactId>graylog-project-parent</artifactId>
         <version>4.4.1-SNAPSHOT</version>
-        <relativePath>../graylog-project-parent</relativePath>
+        <relativePath>../log-project-parent</relativePath>
     </parent>
 
     <artifactId>graylog-plugin-archetype</artifactId>
-    <name>graylog-plugin-archetype</name>
+    <name>log-plugin-archetype</name>
     <url>https://www.graylog.org/</url>
     <packaging>maven-archetype</packaging>
 

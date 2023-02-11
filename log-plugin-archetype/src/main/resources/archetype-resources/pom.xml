@@ -26,7 +26,7 @@
         <groupId>org.graylog.plugins</groupId>
         <artifactId>graylog-plugin-web-parent</artifactId>
         <version>3.0.0-alpha.3-SNAPSHOT</version>
-        <relativePath>${serverCheckoutPath}/graylog-plugin-parent/graylog-plugin-web-parent</relativePath>
+        <relativePath>${serverCheckoutPath}/log-plugin-parent/log-plugin-web-parent</relativePath>
     </parent>
 
     <groupId>${groupId}</groupId>

@@ -24,14 +24,14 @@
         <groupId>org.graylog</groupId>
         <artifactId>graylog-project-parent</artifactId>
         <version>4.4.1-SNAPSHOT</version>
-        <relativePath>../graylog-project-parent</relativePath>
+        <relativePath>../log-project-parent</relativePath>
     </parent>
 
     <groupId>org.graylog2</groupId>
     <artifactId>graylog2-server</artifactId>
     <packaging>jar</packaging>
-    <name>Graylog</name>
-    <description>Graylog</description>
+    <name>LeonaLog</name>
+    <description>LeonaLog</description>
 
     <inceptionYear>2012</inceptionYear>
 
@@ -57,7 +57,7 @@
 
     <properties>
         <mainClass>org.graylog2.bootstrap.Main</mainClass>
-        <webInterface.path>../graylog2-web-interface</webInterface.path>
+        <webInterface.path>../log2-web-interface</webInterface.path>
         <skip.web.build>false</skip.web.build>
 
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>

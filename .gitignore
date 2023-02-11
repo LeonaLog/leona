@@ -28,6 +28,10 @@ dependency-reduced-pom.xml
 /plugin/
 *_gl2plugin.jar
 
+
+/docker/leonalog/leona/plugin/graylog-storage-elasticsearch7-4.4.0-SNAPSHOT.jar
+/docker/leonalog/leona/leona-server-4.4.1-SNAPSHOT-shaded.jar
+
 *.iml
 *.ipr
 *.iws

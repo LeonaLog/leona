@@ -24,7 +24,7 @@
         <groupId>org.graylog</groupId>
         <artifactId>graylog-project-parent</artifactId>
         <version>4.4.1-SNAPSHOT</version>
-        <relativePath>../graylog-project-parent</relativePath>
+        <relativePath>../log-project-parent</relativePath>
     </parent>
 
     <artifactId>full-backend-tests</artifactId>

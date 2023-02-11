@@ -20,11 +20,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <modules>
-        <module>graylog-project-parent</module>
-        <module>graylog-plugin-parent</module>
-        <module>graylog-plugin-archetype</module>
-        <module>graylog-storage-elasticsearch6</module>
-        <module>graylog-storage-elasticsearch7</module>
+        <module>log-project-parent</module>
+        <module>log-plugin-parent</module>
+        <module>log-plugin-archetype</module>
+        <module>log-storage-elasticsearch6</module>
+        <module>log-storage-elasticsearch7</module>
         <module>distribution</module>
     </modules>
 
@@ -498,24 +498,24 @@
                                 <include>src/web/**/*.jsx</include>
                                 <include>src/web/**/*.ts</include>
                                 <include>src/web/**/*.tsx</include>
-                                <include>graylog2-web-interface/*.js</include>
-                                <include>graylog2-web-interface/*.ts</include>
-                                <include>graylog2-web-interface/config/**/*.js</include>
-                                <include>graylog2-web-interface/config/**/*.ts</include>
-                                <include>graylog2-web-interface/packages/**/*.js</include>
-                                <include>graylog2-web-interface/packages/**/*.jsx</include>
-                                <include>graylog2-web-interface/packages/**/*.ts</include>
-                                <include>graylog2-web-interface/packages/**/*.tsx</include>
-                                <include>graylog2-web-interface/src/**/*.js</include>
-                                <include>graylog2-web-interface/src/**/*.jsx</include>
-                                <include>graylog2-web-interface/src/**/*.ts</include>
-                                <include>graylog2-web-interface/src/**/*.tsx</include>
-                                <include>graylog2-web-interface/test/**/*.js</include>
-                                <include>graylog2-web-interface/test/**/*.jsx</include>
-                                <include>graylog2-web-interface/test/**/*.ts</include>
-                                <include>graylog2-web-interface/test/**/*.tsx</include>
-                                <include>graylog2-web-interface/webpack/**/*.js</include>
-                                <include>graylog2-web-interface/webpack/**/*.ts</include>
+                                <include>log2-web-interface/*.js</include>
+                                <include>log2-web-interface/*.ts</include>
+                                <include>log2-web-interface/config/**/*.js</include>
+                                <include>log2-web-interface/config/**/*.ts</include>
+                                <include>log2-web-interface/packages/**/*.js</include>
+                                <include>log2-web-interface/packages/**/*.jsx</include>
+                                <include>log2-web-interface/packages/**/*.ts</include>
+                                <include>log2-web-interface/packages/**/*.tsx</include>
+                                <include>log2-web-interface/src/**/*.js</include>
+                                <include>log2-web-interface/src/**/*.jsx</include>
+                                <include>log2-web-interface/src/**/*.ts</include>
+                                <include>log2-web-interface/src/**/*.tsx</include>
+                                <include>log2-web-interface/test/**/*.js</include>
+                                <include>log2-web-interface/test/**/*.jsx</include>
+                                <include>log2-web-interface/test/**/*.ts</include>
+                                <include>log2-web-interface/test/**/*.tsx</include>
+                                <include>log2-web-interface/webpack/**/*.js</include>
+                                <include>log2-web-interface/webpack/**/*.ts</include>
                             </includes>
                             <excludes>
                                 <exclude>**/resources/swagger/**</exclude>
