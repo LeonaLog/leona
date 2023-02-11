@@ -24,7 +24,7 @@
         </requiredProperty>
 
         <requiredProperty key="serverCheckoutPath">
-            <defaultValue>../graylog2-server</defaultValue>
+            <defaultValue>../log2-server</defaultValue>
         </requiredProperty>
     </requiredProperties>
 

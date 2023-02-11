@@ -36,7 +36,7 @@
     </fileSets>
     <files>
         <file>
-            <source>${project.basedir}/../graylog2-server/target/graylog2-server-${project.version}-shaded.jar</source>
+            <source>${project.basedir}/../log2-server/target/graylog2-server-${project.version}-shaded.jar</source>
             <destName>graylog.jar</destName>
             <outputDirectory>.</outputDirectory>
         </file>
@@ -51,11 +51,11 @@
             <outputDirectory>.</outputDirectory>
         </file>
         <file>
-            <source>${project.basedir}/../graylog-storage-elasticsearch6/target/graylog-storage-elasticsearch6-${project.version}.jar</source>
+            <source>${project.basedir}/../log-storage-elasticsearch6/target/graylog-storage-elasticsearch6-${project.version}.jar</source>
             <outputDirectory>plugin/</outputDirectory>
         </file>
         <file>
-            <source>${project.basedir}/../graylog-storage-elasticsearch7/target/graylog-storage-elasticsearch7-${project.version}.jar</source>
+            <source>${project.basedir}/../log-storage-elasticsearch7/target/graylog-storage-elasticsearch7-${project.version}.jar</source>
             <outputDirectory>plugin/</outputDirectory>
         </file>
     </files>

@@ -24,14 +24,14 @@
         <groupId>org.graylog.plugins</groupId>
         <artifactId>graylog-plugin-parent</artifactId>
         <version>4.4.1-SNAPSHOT</version>
-        <relativePath>../graylog-plugin-parent</relativePath>
+        <relativePath>../log-plugin-parent</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
 
     <groupId>org.graylog</groupId>
     <artifactId>graylog-storage-elasticsearch7</artifactId>
-    <name>graylog-storage-elasticsearch7</name>
+    <name>log-storage-elasticsearch7</name>
     <description>Graylog Storage Module for Elasticsearch 7</description>
 
     <properties>
